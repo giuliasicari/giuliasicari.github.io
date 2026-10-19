@@ -8,6 +8,8 @@ dal repository `giuliasicari.github.io` (branch principale, cartella root).
 - Ogni pagina è un file HTML statico, apribile direttamente nel browser.
 - `.nojekyll` resta nella root: GitHub Pages serve i file così come sono.
 - Unico foglio di stile: `css/style.css`. Unico script: `js/main.js` (solo comparsa allo scroll e anno nel footer).
+- Consentito **GSAP da CDN con versione fissata**, solo per animazioni discrete e sempre con supporto a
+  `prefers-reduced-motion`. Niente React, Tailwind o shadcn in questo sito.
 - Niente CSS inline né `<style>` nelle pagine: aggiungi classi in `css/style.css`.
 
 ## Struttura
@@ -73,3 +75,14 @@ Le pagine in `progetti/` usano percorsi relativi con `../` (es. `../css/style.cs
 - Servizi: i collaboratori non vengono nominati e i servizi non si distinguono tra "miei" e "del team";
   le reference del team si mandano su richiesta. Pacchetti e prezzi: rimandati a un aggiornamento futuro.
 - Strumenti in `about.html` e descrizioni dei progetti sono da verificare.
+
+## Skill
+- Le skill per i siti stanno sul PC di Giulia in `C:\Claude_Folder\claude-skills` (regole in `CLAUDE.md`,
+  elenco e report in `README.md` e `reports/`). Per usarle con Claude sul PC si copiano in
+  `%USERPROFILE%\.claude\skills\`:
+  `xcopy /E /I C:\Claude_Folder\claude-skills\skills %USERPROFILE%\.claude\skills`
+- Le sessioni nel cloud non vedono `C:\`: lì le skill non sono disponibili.
+- Per questo sito: GSAP, minimalist-skill, redesign-skill e ui-ux-pro-max come guida; shadcn e 21st-ui
+  solo come riferimento di design (nessun componente React).
+- **Ogni nuova skill va analizzata prima con Skill Inspector** (NVIDIA SkillSpector + revisione del codice).
+  APPROVE → si aggiunge a `C:\Claude_Folder\claude-skills`; CAUTION o REJECT → spiegare a Giulia e chiedere a lei.

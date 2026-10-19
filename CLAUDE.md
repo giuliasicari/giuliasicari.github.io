@@ -62,6 +62,7 @@ Le pagine in `progetti/` usano percorsi relativi con `../` (es. `../css/style.cs
   proporzioni, aggiornare `width`/`height` nell'`<img>`. Esportare JPG ottimizzati (< 500 KB, lato lungo ≤ 2400px).
 
 ## Dati da completare
-- Email e LinkedIn sono segnaposto: cercare `nome@esempio.it` e `https://www.linkedin.com/in/`
-  in tutti i file HTML (footer di ogni pagina + `contatti.html`) e sostituirli.
+- LinkedIn: https://www.linkedin.com/in/giulia-sicari-195764a3/ (footer di ogni pagina + `contatti.html`).
+- L'email è ancora un segnaposto: cercare `nome@esempio.it` in tutti i file HTML
+  (footer di ogni pagina + `contatti.html`) e sostituirlo.
 - Strumenti in `about.html` e descrizioni dei progetti sono da verificare.

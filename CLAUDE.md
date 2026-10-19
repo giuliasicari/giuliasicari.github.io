@@ -63,6 +63,5 @@ Le pagine in `progetti/` usano percorsi relativi con `../` (es. `../css/style.cs
 
 ## Dati da completare
 - LinkedIn: https://www.linkedin.com/in/giulia-sicari-195764a3/ (footer di ogni pagina + `contatti.html`).
-- L'email è ancora un segnaposto: cercare `nome@esempio.it` in tutti i file HTML
-  (footer di ogni pagina + `contatti.html`) e sostituirlo.
+- Email: giuliasicari93@gmail.com (footer di ogni pagina + `contatti.html`).
 - Strumenti in `about.html` e descrizioni dei progetti sono da verificare.

@@ -429,3 +429,97 @@ ul { list-style: none; }
   max-width: 60ch;
   color: #333;
 }
+
+/* --- Servizi --------------------------------------------------------------- */
+.services__intro {
+  max-width: 40ch;
+  margin-bottom: var(--space-l);
+}
+.services {
+  padding-bottom: var(--space-l);
+}
+.service {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+  padding-block: var(--space-m);
+  border-bottom: 1px solid var(--line);
+}
+.service:first-child { padding-top: var(--space-s); }
+.service__index,
+.step__index {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--accent);
+  padding-top: 0.45em;
+}
+.service__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+.service__text {
+  grid-column: 2;
+  color: #333;
+  max-width: 48ch;
+}
+@media (min-width: 900px) {
+  .service {
+    grid-template-columns: 3rem 1.4fr 1fr;
+    gap: var(--space-m);
+    align-items: baseline;
+  }
+  .service__text { grid-column: 3; }
+}
+
+.process {
+  padding-bottom: var(--space-l);
+}
+.process__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-m);
+}
+.step {
+  border-top: 1px solid var(--line);
+  padding-top: var(--space-s);
+}
+.step__index { display: block; padding-top: 0; }
+.step__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+  letter-spacing: -0.02em;
+  margin-block: 0.75rem 0.5rem;
+}
+.step__text {
+  color: #333;
+  max-width: 36ch;
+}
+@media (min-width: 760px) {
+  .process__list { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1100px) {
+  .process__list { grid-template-columns: repeat(4, 1fr); }
+}
+
+.cta-note {
+  margin-top: var(--space-s);
+  color: var(--muted);
+}
+
+/* Schermi molto stretti: il menu va sotto il nome */
+@media (max-width: 400px) {
+  .site-header .wrap {
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
+    padding-block: 0.75rem;
+  }
+  .nav { width: 100%; }
+  .nav ul { justify-content: space-between; }
+}

@@ -14,6 +14,7 @@ dal repository `giuliasicari.github.io` (branch principale, cartella root).
 ```
 index.html            Home: nome, ruolo, frase di presentazione, griglia progetti (#lavori)
 about.html            Bio, esperienza/formazione, competenze, strumenti
+servizi.html          Servizi offerti (anche con il network di collaboratori), "Come lavoro", invito al contatto
 contatti.html         Email e LinkedIn
 404.html              Pagina di errore (usa percorsi assoluti "/…")
 progetti/<slug>.html  Una pagina per progetto
@@ -44,6 +45,11 @@ Le pagine in `progetti/` usano percorsi relativi con `../` (es. `../css/style.cs
   Se l'ultimo progetto resta da solo nella riga, va automaticamente a tutta larghezza.
 - Verificare sempre che non ci sia scroll orizzontale a 390px.
 
+## Menu
+- Voci, in quest'ordine, uguali su ogni pagina: Lavori, About, Servizi, Contatti.
+- La voce della pagina corrente ha `aria-current="page"`.
+- Sotto i 400px il menu va su una riga sotto il nome: verificare anche a 320px.
+
 ## Testi
 - Tutti i testi in **italiano**, tono professionale e diretto, in prima persona nell'About.
 - Attributo `lang="it"` su ogni pagina; ogni immagine ha un `alt` descrittivo.
@@ -64,4 +70,6 @@ Le pagine in `progetti/` usano percorsi relativi con `../` (es. `../css/style.cs
 ## Dati da completare
 - LinkedIn: https://www.linkedin.com/in/giulia-sicari-195764a3/ (footer di ogni pagina + `contatti.html`).
 - Email: giuliasicari93@gmail.com (footer di ogni pagina + `contatti.html`).
+- Servizi: i collaboratori non vengono nominati e i servizi non si distinguono tra "miei" e "del team";
+  le reference del team si mandano su richiesta. Pacchetti e prezzi: rimandati a un aggiornamento futuro.
 - Strumenti in `about.html` e descrizioni dei progetti sono da verificare.

@@ -3,6 +3,12 @@
 Sito portfolio di Giulia Sicari, art director a Milano. Pubblicato con GitHub Pages
 dal repository `giuliasicari.github.io` (branch principale, cartella root).
 
+> **Redesign in arrivo.** Il sito va rivisto tutto dopo l'installazione delle skill per il web design.
+> Le sezioni Tecnologia, Struttura, Stile, Responsive e Menu descrivono la **versione attuale**:
+> nel redesign si possono rimettere in discussione, con un prototipo da far approvare a Giulia.
+> Restano valide: pubblicazione su GitHub Pages, testi in italiano, accessibilità.
+> Questo repository è **pubblico**: niente strategia commerciale, prezzi o dati di fornitori.
+
 ## Tecnologia
 - Solo HTML, CSS e JavaScript semplici. **Nessun framework, nessun build step, nessuna dipendenza npm.**
 - Ogni pagina è un file HTML statico, apribile direttamente nel browser.
@@ -77,12 +83,7 @@ Le pagine in `progetti/` usano percorsi relativi con `../` (es. `../css/style.cs
 - Strumenti in `about.html` e descrizioni dei progetti sono da verificare.
 
 ## Skill
-- Le skill per i siti stanno sul PC di Giulia in `C:\Claude_Folder\claude-skills` (regole in `CLAUDE.md`,
-  elenco e report in `README.md` e `reports/`). Per usarle con Claude sul PC si copiano in
-  `%USERPROFILE%\.claude\skills\`:
-  `xcopy /E /I C:\Claude_Folder\claude-skills\skills %USERPROFILE%\.claude\skills`
+- Installazione e controllo di sicurezza delle skill: vedi le istruzioni generali di Claude.
 - Le sessioni nel cloud non vedono `C:\`: lì le skill non sono disponibili.
 - Per questo sito: GSAP, minimalist-skill, redesign-skill e ui-ux-pro-max come guida; shadcn e 21st-ui
   solo come riferimento di design (nessun componente React).
-- **Ogni nuova skill va analizzata prima con Skill Inspector** (NVIDIA SkillSpector + revisione del codice).
-  APPROVE → si aggiunge a `C:\Claude_Folder\claude-skills`; CAUTION o REJECT → spiegare a Giulia e chiedere a lei.

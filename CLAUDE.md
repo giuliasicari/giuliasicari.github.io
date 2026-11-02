@@ -85,5 +85,8 @@ Le pagine in `progetti/` usano percorsi relativi con `../` (es. `../css/style.cs
 ## Skill
 - Installazione e controllo di sicurezza delle skill: vedi le istruzioni generali di Claude.
 - Le sessioni nel cloud non vedono `C:\`: lì le skill non sono disponibili.
-- Per questo sito: GSAP, minimalist-skill, redesign-skill e ui-ux-pro-max come guida; shadcn e 21st-ui
-  solo come riferimento di design (nessun componente React).
+- Per questo sito: GSAP (`gsap-core`, `gsap-timeline`, `gsap-scrolltrigger`, `gsap-performance`),
+  `design-taste-frontend` (taste-skill, include il percorso di redesign), `minimalist-ui` e `ui-ux-pro-max`
+  come guida; shadcn e 21st-ui solo come riferimento di design (nessun componente React).
+- Gli script di `design-taste-frontend` scaricano immagini da internet e aprono Chrome: lanciarli solo
+  con il permesso di Giulia.

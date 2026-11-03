@@ -98,6 +98,9 @@ Stile Behance: guidata dalle immagini, pochissimo testo. Ordine:
   Non riempire con bande vuote: se serve spazio, estendi lo sfondo o cambia composizione. Le copertine verticali
   (2:3) vengono mostrate intere sui telefoni (pannelli della home in 2:3); in Lavori la tavola è 4:5: se la copertina
   ha testi in basso usa `.work__media--bottom`.
+- **Bordi sempre rifilati** (richiesta di Giulia): nessuna striscia bianca o di colore ai bordi dovuta a un ritaglio
+  impreciso (residui di slide, cornici, righe di 1-2 px). Prima di pubblicare controlla i quattro bordi di ogni
+  immagine, in automatico e a vista, e rifila; nelle coppie affiancate rifila la stessa quantità su entrambe.
 - Immagini con nomi descrittivi in `images/<slug>/` (es. `cover.jpg`, `cover-mobile.jpg`, `manifesto.jpg`,
   `poster-1.jpg`). Senza bordi bianchi: rifilare o ingrandire leggermente per riempire il formato.
 - In home il pannello ha `id="<slug>"` e la `<picture>` con la copertina verticale; in Lavori la tavola 4:5

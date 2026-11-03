@@ -569,6 +569,24 @@ main { animation: page-in 0.8s var(--ease-out) both; }
 .palette-mosaic .is-light { color: var(--p-1); }
 .palette-mosaic b { font-size: 13px; font-weight: 500; letter-spacing: 0.2em; }
 
+/* Valori e colori: per ogni valore una foto quadrata sopra il suo campo di colore */
+.values {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  margin-inline: var(--gutter);
+}
+@media (min-width: 900px) { .values { grid-template-columns: repeat(4, 1fr); } }
+.values figure { display: flex; flex-direction: column; }
+.values img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.values figcaption {
+  flex: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 32px;
+  min-height: clamp(150px, 17vw, 260px); padding: clamp(14px, 2vw, 28px);
+  background: var(--c); color: #fff;
+}
+.values__value { font-size: clamp(1.15rem, 1.9vw, 1.9rem); line-height: 1.05; font-weight: 700; text-transform: uppercase; }
+.values__color { font-size: 11px; line-height: 1.6; letter-spacing: 0.16em; text-transform: uppercase; }
+.values__color b { display: block; font-size: 13px; }
+.values .is-light figcaption { color: #3a2400; }
+
 /* Numeri chiave del progetto, nello stile del sito (bianco su nero) */
 .facts {
   display: grid; gap: 32px 20px;
@@ -612,6 +630,13 @@ main { animation: page-in 0.8s var(--ease-out) both; }
 .swatch__chip--salvia  { --c: #67813b; }
 .swatch__chip--crema   { --c: #f5dea2; }
 .swatch__chip--bianco  { --c: #ffffff; }
+
+/* ---------- Progetto: Hummus Around ---------- */
+.project--hummus .values { font-family: "Montserrat", var(--font); }  /* il carattere dei testi del marchio */
+.values .c-ottanio      figcaption { --c: #007297; }
+.values .c-porpora      figcaption { --c: #ab004f; }
+.values .c-giallo-scuro figcaption { --c: #ffa401; }
+.values .c-terra        figcaption { --c: #df864e; }
 
 /* ---------- Progetto: FG Albertelli ---------- */
 .project--fg {

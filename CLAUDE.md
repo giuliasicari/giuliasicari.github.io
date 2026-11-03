@@ -82,6 +82,9 @@ Stile Behance: guidata dalle immagini, pochissimo testo. Ordine:
    `.system` (colore, texture; "Dove vive il marchio" `.touch` solo per identità con molti supporti).
    Altri blocchi: `.steps` (passaggi di una trasformazione), `.places` (luoghi con coordinate), `.facts` (tre numeri
    chiave, bianco su nero), `.platform-icon` (icona della piattaforma accanto all'ambito, es. LinkedIn).
+   `.areas` (aree di un posizionamento con foto, definizione e parole chiave, dentro `.system`),
+   `.palette-mosaic` (palette con le proporzioni della tavola del cliente, es. FG Albertelli).
+   Un carattere del marchio si può evocare nelle tavole con un equivalente Google Fonts (es. Jost per il Futura).
    Varia la tavola di sintesi da un progetto all'altro per non essere ripetitiva: se il documento ha già
    una sua tavola della palette (es. FILA), usa quella così com'è invece dei campioni `.swatches`.
 6. **Niente crediti** e niente nome dell'agenzia.
@@ -89,6 +92,12 @@ Stile Behance: guidata dalle immagini, pochissimo testo. Ordine:
 - In alto "← Torna alla home" con `href="../index.html#<slug>"`: la home si riapre sul pannello del progetto
 - Colori del progetto: variabili `--p-1`, `--p-2`, `--p-paper`, `--p-ink` su `.project--<slug>`,
   in una sezione dedicata in fondo ai moduli in `style.css` (insieme ai campioni `.swatch__chip--<nome>`).
+- **Nessun testo tagliato** (richiesta di Giulia). In una riga con immagini di proporzioni diverse usa
+  `.row--ratio` con colonne proporzionali al rapporto larghezza/altezza (classe `.row--<slug>-<nome>` nella
+  sezione del progetto), oppure prepara immagini con le stesse proporzioni ritagliando solo ciò che non ha testo.
+  Non riempire con bande vuote: se serve spazio, estendi lo sfondo o cambia composizione. Le copertine verticali
+  (2:3) vengono mostrate intere sui telefoni (pannelli della home in 2:3); in Lavori la tavola è 4:5: se la copertina
+  ha testi in basso usa `.work__media--bottom`.
 - Immagini con nomi descrittivi in `images/<slug>/` (es. `cover.jpg`, `cover-mobile.jpg`, `manifesto.jpg`,
   `poster-1.jpg`). Senza bordi bianchi: rifilare o ingrandire leggermente per riempire il formato.
 - In home il pannello ha `id="<slug>"` e la `<picture>` con la copertina verticale; in Lavori la tavola 4:5

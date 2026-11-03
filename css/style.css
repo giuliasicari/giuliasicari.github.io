@@ -237,6 +237,11 @@ main { animation: page-in 0.8s var(--ease-out) both; }
   background: var(--line);
 }
 .panel picture { display: block; height: 100%; }  /* copertina con versione verticale per telefono */
+/* Telefono in verticale: il pannello prende le proporzioni della copertina verticale (2:3),
+   così la copertina si vede intera e i testi dentro l'immagine non vengono tagliati */
+@media (max-width: 759px) and (orientation: portrait) {
+  .panel { height: auto; aspect-ratio: 2 / 3; }
+}
 .panel img {
   width: 100%; height: 100%;
   object-fit: cover;
@@ -283,6 +288,7 @@ main { animation: page-in 0.8s var(--ease-out) both; }
   background: var(--line);
 }
 .work__media img { width: 100%; height: 100%; object-fit: cover; }
+.work__media--bottom img { object-position: center bottom; }  /* copertine con testi in basso */
 .work__caption { margin-top: 12px; color: var(--muted); transition: color 0.3s ease; }
 .work:hover .work__caption { color: var(--ink); }
 
@@ -438,6 +444,10 @@ main { animation: page-in 0.8s var(--ease-out) both; }
   .row--3 { grid-template-columns: repeat(3, 1fr); }
 }
 
+/* Riga con immagini di proporzioni diverse, tutte intere: le colonne sono proporzionali
+   alle immagini (impostate nella sezione del progetto), così le altezze coincidono senza tagli */
+.row--ratio img { height: auto; }
+
 /* Tavola colorata che fa da fondo a un gruppo di immagini (es. una campagna) */
 .stage {
   margin-inline: var(--gutter);
@@ -528,6 +538,37 @@ main { animation: page-in 0.8s var(--ease-out) both; }
 .places span { opacity: 0.55; }
 .places .is-hub b { color: var(--p-2); }
 
+/* Aree di un posizionamento: foto, nome, definizione e parole chiave (dentro .system) */
+.areas { display: grid; gap: clamp(32px, 4vw, 48px); }
+@media (min-width: 900px) { .areas { grid-template-columns: repeat(3, 1fr); gap: clamp(20px, 2.5vw, 40px); } }
+.areas img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.areas__name {
+  margin-top: 16px;
+  font-size: var(--fs-big); line-height: 1; letter-spacing: -0.01em; color: var(--p-1);
+}
+.areas__text { margin-top: 10px; font-size: 15px; line-height: 1.4; max-width: 36ch; }
+.areas ul {
+  display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 18px;
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--p-1);
+}
+
+/* Palette a mosaico: un colore principale grande, uno di sostegno, quattro secondari */
+.palette-mosaic {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  margin-inline: var(--gutter);
+}
+@media (min-width: 760px) { .palette-mosaic { grid-template-columns: repeat(4, 1fr); } }
+.palette-mosaic div {
+  display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end;
+  min-height: clamp(120px, 16vw, 240px); padding: clamp(12px, 2vw, 28px);
+  background: var(--c); color: #fff; text-align: right;
+  font-size: 11px; line-height: 1.5; letter-spacing: 0.16em; text-transform: uppercase;
+}
+.palette-mosaic .is-main { grid-column: 1 / -1; min-height: clamp(220px, 32vw, 460px); }
+.palette-mosaic .is-wide { grid-column: 1 / -1; }
+.palette-mosaic .is-light { color: var(--p-1); }
+.palette-mosaic b { font-size: 13px; font-weight: 500; letter-spacing: 0.2em; }
+
 /* Numeri chiave del progetto, nello stile del sito (bianco su nero) */
 .facts {
   display: grid; gap: 32px 20px;
@@ -571,6 +612,27 @@ main { animation: page-in 0.8s var(--ease-out) both; }
 .swatch__chip--salvia  { --c: #67813b; }
 .swatch__chip--crema   { --c: #f5dea2; }
 .swatch__chip--bianco  { --c: #ffffff; }
+
+/* ---------- Progetto: FG Albertelli ---------- */
+.project--fg {
+  --p-1: #0a2240;   /* blu FG, Pantone 289 C */
+  --p-2: #758592;   /* grigio acciaio */
+  --p-paper: #ebe7e4;
+  --p-ink: #0a2240;
+}
+.project--fg .system,
+.project--fg .palette-mosaic { font-family: "Jost", var(--font); }  /* vicino al Futura del marchio */
+.project--fg .stage { background: var(--p-1); }
+@media (min-width: 760px) {
+  .row--fg-font { grid-template-columns: 881fr 1000fr; }    /* rapporti: loghi 1560/1770, Futura 1930/1930 */
+  .row--fg-sito { grid-template-columns: 1568fr 946fr; }    /* pagine intere 1568×2600 e 946×2600 */
+}
+.palette-mosaic .c-blu-fg    { --c: #0a2240; }
+.palette-mosaic .c-acciaio   { --c: #758592; }
+.palette-mosaic .c-azzurro   { --c: #b7c7d3; }
+.palette-mosaic .c-beige     { --c: #bfb7b0; }
+.palette-mosaic .c-castagna  { --c: #30261d; }
+.palette-mosaic .c-bordeaux  { --c: #450110; }
 
 /* ---------- Progetto: IDNTT Everywhere ---------- */
 .project--idntt {

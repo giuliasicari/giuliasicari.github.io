@@ -103,13 +103,17 @@ Stile Behance: guidata dalle immagini, pochissimo testo. Ordine:
   immagine, in automatico e a vista, e rifila; nelle coppie affiancate rifila la stessa quantità su entrambe.
   Criterio: una fascia uniforme al bordo che stacca di colpo dall'immagine (residuo di slide, bianco attorno a
   un oggetto, striscia di colore) va tagliata; il fondo pieno che continua dentro la composizione no.
+- **Soggetto mai tagliato** (richiesta di Giulia): un ritaglio non deve mozzare un soggetto di poco (es. un anello
+  tagliato sul fondo). O il soggetto è intero e centrato, ricostruendo lo sfondo se manca, o il taglio è un vero
+  dettaglio fotografico, deciso e ravvicinato.
 - Immagini con nomi descrittivi in `images/<slug>/` (es. `cover.jpg`, `cover-mobile.jpg`, `manifesto.jpg`,
   `poster-1.jpg`). Senza bordi bianchi: rifilare o ingrandire leggermente per riempire il formato.
 - In home il pannello ha `id="<slug>"` e la `<picture>` con la copertina verticale; in Lavori la tavola 4:5
   usa `cover-mobile.jpg`.
 - Sorgenti e prototipi restano fuori dal repo, in `C:\Claude_Folder\portfolio-prototipi\` (repo pubblico).
 - Progetti (3/11/2026). In home, in quest'ordine: FG Albertelli, Il Mannarino, Etjca, Hummus Around,
-  IDNTT Everywhere, FILA Group, Postbiotica (confermato da Giulia). Solo in Lavori: Momento, Al Passo, Zero.
+  IDNTT Everywhere, FILA Group, Postbiotica (confermato da Giulia). Solo in Lavori: Momento, Al Passo, Zero, e in coda i progetti di laurea
+  (Politecnico): Chilling at Home, TAAC, Handprint. Da dichiarare come tali: "tesi di laurea per IMETEC", "concept per IKEA".
 - Per aggiungere un progetto: crea `progetti/<slug>.html` sul modello v2 (vedi le pagine esistenti), le immagini
   in `images/<slug>/`, aggiungi pannello in `index.html` (se in home) e tavola in `lavori.html`, e aggiorna il
   "Progetto successivo" del progetto precedente (l'ultimo punta al primo).

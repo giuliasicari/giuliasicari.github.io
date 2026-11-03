@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TAAC — Giulia Sicari</title>
+  <meta name="description" content="TAAC, il tavolo che si monta in pochi minuti e si porta come uno zaino: concept per IKEA, Politecnico di Milano.">
+  <meta property="og:title" content="TAAC — Giulia Sicari">
+  <meta property="og:description" content="TAAC, il tavolo che si monta in pochi minuti e si porta come uno zaino: concept per IKEA, Politecnico di Milano.">
+  <meta property="og:type" content="article">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,800&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+  <header class="site-header">
+    <a class="back" href="../index.html"><span aria-hidden="true">←</span> Torna alla home</a>
+    <nav class="nav" aria-label="Navigazione principale">
+      <ul>
+        <li><a href="../lavori.html" aria-current="page">Lavori</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../servizi.html">Servizi</a></li>
+        <li><a href="../contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Apri il menu">
+      <span class="menu-toggle__bars"></span><span class="menu-toggle__x"></span>
+    </button>
+  </header>
+
+  <nav class="mobile-menu" id="menu-mobile" aria-label="Menu">
+    <ul>
+      <li><a href="../lavori.html" aria-current="page">Lavori</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../servizi.html">Servizi</a></li>
+      <li><a href="../contatti.html">Contatti</a></li>
+    </ul>
+    <div class="mobile-menu__foot">
+      <a href="mailto:giuliasicari93@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/giulia-sicari-195764a3/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </nav>
+
+  <main id="contenuto">
+    <article class="project project--taac">
+      <!-- Copertina: orizzontale, verticale sui telefoni tenuti in verticale -->
+      <figure class="hero">
+        <picture>
+          <source media="(max-width: 759px) and (orientation: portrait)" srcset="../images/taac/cover-mobile.jpg" width="1200" height="1800">
+          <img src="../images/taac/cover.jpg" alt="Il tavolo TAAC bianco in una cucina luminosa con due sedie" width="2400" height="1350" fetchpriority="high">
+        </picture>
+      </figure>
+
+      <dl class="hero-meta">
+        <div><dt>Cliente</dt><dd>IKEA · concept, progetto universitario</dd></div>
+        <div><dt>Ambito</dt><dd>Product design</dd></div>
+      </dl>
+
+      <!-- Il nome è già nella copertina: il titolo resta solo per lettori di schermo e motori di ricerca -->
+      <header class="project-intro">
+        <h1 class="visually-hidden">TAAC</h1>
+        <p class="project-intro__text">«Tavolo ribaltabile, taac.» Come nel Ragazzo di campagna: un tavolo che si monta in pochi minuti e si porta come uno zaino. Concept per IKEA, Laboratorio di Metaprogetto al Politecnico di Milano.</p>
+      </header>
+
+      <div class="flow">
+        <div class="row row--2 row--ratio row--taac-tavolo">
+          <figure class="reveal"><img src="../images/taac/blu.jpg" alt="Il tavolo TAAC su fondo azzurro" width="646" height="875" loading="lazy"></figure>
+          <figure class="reveal"><img src="../images/taac/sedia.jpg" alt="Il piano di TAAC in tre parti, con una sedia azzurra" width="549" height="587" loading="lazy"></figure>
+        </div>
+
+        <header class="section reveal">
+          <p class="section__label">01 — Smontabile, semplice, condivisibile</p>
+          <p class="section__text">Dalla cena allo studio, dal gioco agli hobby: un caffè, un libro, due chiacchiere. Il tavolo va dove servono.</p>
+        </header>
+
+        <div class="stage reveal">
+          <div class="row row--4">
+          <figure class="reveal"><img src="../images/taac/colore-grigio.jpg" alt="Il tavolo TAAC su fondo grigio" width="364" height="364" loading="lazy"></figure>
+          <figure class="reveal"><img src="../images/taac/colore-verde.jpg" alt="Il tavolo TAAC su fondo verde" width="364" height="364" loading="lazy"></figure>
+          <figure class="reveal"><img src="../images/taac/colore-giallo.jpg" alt="Il tavolo TAAC su fondo giallo" width="364" height="364" loading="lazy"></figure>
+          <figure class="reveal"><img src="../images/taac/colore-rosso.jpg" alt="Il tavolo TAAC su fondo rosso" width="364" height="364" loading="lazy"></figure>
+          </div>
+        </div>
+
+        <header class="section reveal">
+          <p class="section__label">02 — Nella sacca</p>
+          <p class="section__text">Piano, gambe e minuteria stanno in una sacca con le cinghie: si indossa come uno zaino e il tavolo viaggia con te.</p>
+        </header>
+
+        <div class="row row--2 row--ratio row--taac-sacca">
+          <figure class="reveal"><img src="../images/taac/sacca-kit.jpg" alt="La sacca TAAC aperta con il piano, le gambe e la minuteria" width="889" height="596" loading="lazy"></figure>
+          <figure class="reveal"><img src="../images/taac/sacca-spalla.jpg" alt="La sacca TAAC portata sulla spalla" width="552" height="340" loading="lazy"></figure>
+        </div>
+      </div>
+    </article>
+
+    <!-- Fine pagina: tutti i lavori a sinistra, progetto successivo a destra -->
+    <nav class="project-nav" aria-label="Altri progetti">
+      <a class="project-nav__all" href="../lavori.html">
+        <span class="project-nav__label">Tutti i progetti</span>
+        <span class="project-nav__title"><span class="project-nav__arrow" aria-hidden="true">←</span> Torna ai lavori</span>
+      </a>
+      <a class="project-nav__next" href="handprint.html">
+        <span class="project-nav__label">Progetto successivo</span>
+        <span class="project-nav__title">Handprint <span class="project-nav__arrow" aria-hidden="true">→</span></span>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__text reveal">Mi fa sempre piacere conoscere persone e progetti nuovi. Scrivimi a <a href="mailto:giuliasicari93@gmail.com">giuliasicari93@gmail.com</a> o su <a href="https://www.linkedin.com/in/giulia-sicari-195764a3/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    <div class="site-footer__bottom">
+      <p>© <span data-year>2026</span> Giulia Sicari</p>
+      <p>Art Director, Milano</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -670,6 +670,19 @@ main { animation: page-in 0.8s var(--ease-out) both; }
 .swatch__chip--crema   { --c: #f5dea2; }
 .swatch__chip--bianco  { --c: #ffffff; }
 
+/* ---------- Progetti di laurea (Politecnico di Milano) ---------- */
+.row--4 { grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 760px) {
+  .row--4 { grid-template-columns: repeat(4, 1fr); }
+  .row--ch-materiali { grid-template-columns: 892fr 809fr; }          /* pouf 2141×2400, materiali 1160×1433 */
+  .row--taac-tavolo { grid-template-columns: 738fr 935fr; }           /* blu 646×875, sedia 549×587 */
+  .row--taac-sacca { grid-template-columns: 1492fr 1624fr; }          /* kit 889×596, spalla 552×340 */
+  .row--hp-coppia { grid-template-columns: 1152fr 1076fr; }           /* solidale 877×761, remains 1470×1366 */
+}
+.project--taac .stage { background: #e9e9e9; }
+.project--handprint .stage { background: #000; }
+.project--handprint .stage figure { box-shadow: none; }
+
 /* ---------- Progetto: Etjca ---------- */
 .project--etjca { --p-1: #0f102a; --p-2: #dc0711; --p-paper: #f2f2f4; --p-ink: #0f102a; }
 .swatch__chip--et-rosso  { --c: #dc0711; }

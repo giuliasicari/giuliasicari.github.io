@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Handprint — Giulia Sicari</title>
+  <meta name="description" content="Handprint, progetto fotografico di sensibilizzazione contro la violenza sulle donne.">
+  <meta property="og:title" content="Handprint — Giulia Sicari">
+  <meta property="og:description" content="Handprint, progetto fotografico di sensibilizzazione contro la violenza sulle donne.">
+  <meta property="og:type" content="article">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,800&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+  <header class="site-header">
+    <a class="back" href="../index.html"><span aria-hidden="true">←</span> Torna alla home</a>
+    <nav class="nav" aria-label="Navigazione principale">
+      <ul>
+        <li><a href="../lavori.html" aria-current="page">Lavori</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../servizi.html">Servizi</a></li>
+        <li><a href="../contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Apri il menu">
+      <span class="menu-toggle__bars"></span><span class="menu-toggle__x"></span>
+    </button>
+  </header>
+
+  <nav class="mobile-menu" id="menu-mobile" aria-label="Menu">
+    <ul>
+      <li><a href="../lavori.html" aria-current="page">Lavori</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../servizi.html">Servizi</a></li>
+      <li><a href="../contatti.html">Contatti</a></li>
+    </ul>
+    <div class="mobile-menu__foot">
+      <a href="mailto:giuliasicari93@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/giulia-sicari-195764a3/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </nav>
+
+  <main id="contenuto">
+    <article class="project project--handprint">
+      <!-- Copertina: orizzontale, verticale sui telefoni tenuti in verticale -->
+      <figure class="hero">
+        <picture>
+          <source media="(max-width: 759px) and (orientation: portrait)" srcset="../images/handprint/cover-mobile.jpg" width="1200" height="1800">
+          <img src="../images/handprint/cover.jpg" alt="Due donne abbracciate su fondo nero, con impronte di mani rosse sulla pelle" width="2400" height="1350" fetchpriority="high">
+        </picture>
+      </figure>
+
+      <dl class="hero-meta">
+        <div><dt>Cliente</dt><dd>Progetto fotografico · Politecnico di Milano</dd></div>
+        <div><dt>Ambito</dt><dd>Fotografia</dd></div>
+      </dl>
+
+      <!-- Il nome è già nella copertina: il titolo resta solo per lettori di schermo e motori di ricerca -->
+      <header class="project-intro">
+        <h1 class="visually-hidden">Handprint</h1>
+        <p class="project-intro__text">Le macchie sono segni indelebili sulla pelle. Handprint è un progetto fotografico contro la violenza sulle donne: impronte rosse sui corpi, e due donne che si cercano per non restare sole.</p>
+      </header>
+
+      <div class="flow">
+        <div class="stage reveal">
+          <div class="row row--2 row--ratio row--hp-coppia">
+            <figure class="reveal"><img src="../images/handprint/solidale.jpg" alt="Due donne sedute e strette l’una all’altra, con impronte rosse su braccia e gambe" width="877" height="761" loading="lazy"></figure>
+            <figure class="reveal"><img src="../images/handprint/remains.jpg" alt="Primo piano di due donne abbracciate, lo sguardo verso l’obiettivo, impronte rosse sulla schiena" width="1470" height="1366" loading="lazy"></figure>
+          </div>
+        </div>
+
+        <header class="section reveal">
+          <p class="section__label">Solidale, indelebile, rosso</p>
+          <p class="section__text">La violenza di genere non è solo aggressione fisica: è anche ricatto, minaccia, persecuzione. Le impronte sono i segni che restano; i corpi che si stringono, la solidarietà tra donne.</p>
+        </header>
+
+        <div class="stage reveal">
+          <div class="row">
+            <figure class="reveal"><img src="../images/handprint/conforto.jpg" alt="In bianco e nero, una donna seduta veglia su un’altra distesa a terra, impronte scure sulla pelle" width="879" height="670" loading="lazy"></figure>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Fine pagina: tutti i lavori a sinistra, progetto successivo a destra -->
+    <nav class="project-nav" aria-label="Altri progetti">
+      <a class="project-nav__all" href="../lavori.html">
+        <span class="project-nav__label">Tutti i progetti</span>
+        <span class="project-nav__title"><span class="project-nav__arrow" aria-hidden="true">←</span> Torna ai lavori</span>
+      </a>
+      <a class="project-nav__next" href="il-mannarino.html">
+        <span class="project-nav__label">Progetto successivo</span>
+        <span class="project-nav__title">Il Mannarino <span class="project-nav__arrow" aria-hidden="true">→</span></span>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__text reveal">Mi fa sempre piacere conoscere persone e progetti nuovi. Scrivimi a <a href="mailto:giuliasicari93@gmail.com">giuliasicari93@gmail.com</a> o su <a href="https://www.linkedin.com/in/giulia-sicari-195764a3/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    <div class="site-footer__bottom">
+      <p>© <span data-year>2026</span> Giulia Sicari</p>
+      <p>Art Director, Milano</p>
+    </div>
+  </footer>
+</body>
+</html>

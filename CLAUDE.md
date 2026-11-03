@@ -27,10 +27,10 @@ servizi.html          Frase grande + "I miei servizi" e "Come lavoro" in colonna
 contatti.html         Frase grande + email, LinkedIn, base
 404.html              Pagina di errore (usa percorsi assoluti "/…")
 progetti/<slug>.html  Una pagina per progetto (modello v2: vedi sotto)
-images/<slug>/        Immagini del progetto: cover.jpg, 01.jpg … 04.jpg
+images/<slug>/        Immagini del progetto: cover.jpg, cover-mobile.jpg e tavole con nomi descrittivi
 css/style.css  js/main.js  favicon.svg
 ```
-Le pagine in `progetti/` usano percorsi relativi con `../` (es. `../css/style.css`, `../images/<slug>/01.jpg`).
+Le pagine in `progetti/` usano percorsi relativi con `../` (es. `../css/style.css`, `../images/<slug>/cover.jpg`).
 
 ## Stile
 - **Nero, bianco e un grigio. Nessun colore d'accento.** Variabili in `:root`:
@@ -101,26 +101,18 @@ Stile Behance: guidata dalle immagini, pochissimo testo. Ordine:
 - **Bordi sempre rifilati** (richiesta di Giulia): nessuna striscia bianca o di colore ai bordi dovuta a un ritaglio
   impreciso (residui di slide, cornici, righe di 1-2 px). Prima di pubblicare controlla i quattro bordi di ogni
   immagine, in automatico e a vista, e rifila; nelle coppie affiancate rifila la stessa quantità su entrambe.
+  Criterio: una fascia uniforme al bordo che stacca di colpo dall'immagine (residuo di slide, bianco attorno a
+  un oggetto, striscia di colore) va tagliata; il fondo pieno che continua dentro la composizione no.
 - Immagini con nomi descrittivi in `images/<slug>/` (es. `cover.jpg`, `cover-mobile.jpg`, `manifesto.jpg`,
   `poster-1.jpg`). Senza bordi bianchi: rifilare o ingrandire leggermente per riempire il formato.
 - In home il pannello ha `id="<slug>"` e la `<picture>` con la copertina verticale; in Lavori la tavola 4:5
   usa `cover-mobile.jpg`.
 - Sorgenti e prototipi restano fuori dal repo, in `C:\Claude_Folder\portfolio-prototipi\` (repo pubblico).
-- Da valutare: quali progetti vanno in home (gli altri solo in Lavori). Le pagine dei vecchi progetti
-  (Conad, Ecopneus, IDNTT, EVway, Grimaldi) usano ancora il modello v1 qui sotto.
-
-## Aggiungere o modificare un progetto (modello v1, da sostituire con il v2)
-1. Crea `images/<slug>/` con `cover.jpg` (consigliato 1920×1440; in Lavori viene ritagliata in 4:5,
-   in home a tutto schermo: tieni il soggetto al centro) e le immagini della galleria
-   (`01.jpg` e `04.jpg` orizzontali 16:9 a tutta larghezza, `02.jpg` e `03.jpg` verticali 4:5 affiancate).
-2. Duplica una pagina in `progetti/` e aggiorna `<title>`, meta description, titolo, Cliente, Ruolo,
-   Ambito, testi, percorsi e `width`/`height` delle immagini.
-3. Aggiungi il pannello in `index.html` (numero e nome) e la tavola in `lavori.html` (nome e ambito).
-4. Aggiorna il link "Progetto successivo" del progetto precedente (l'ultimo punta al primo).
-- Galleria: `<figure class="reveal">` = tutta larghezza, `<figure class="half reveal">` = mezza
-  larghezza (vanno a coppie).
-- Per sostituire un segnaposto basta sovrascrivere il file con lo stesso nome. Se cambiano le
-  proporzioni, aggiornare `width`/`height` nell'`<img>`. Esportare JPG ottimizzati (< 500 KB, lato lungo ≤ 2400px).
+- Progetti (3/11/2026). In home, in quest'ordine: FG Albertelli, Il Mannarino, Etjca, Hummus Around,
+  IDNTT Everywhere, FILA Group, Postbiotica (confermato da Giulia). Solo in Lavori: Momento, Al Passo, Zero.
+- Per aggiungere un progetto: crea `progetti/<slug>.html` sul modello v2 (vedi le pagine esistenti), le immagini
+  in `images/<slug>/`, aggiungi pannello in `index.html` (se in home) e tavola in `lavori.html`, e aggiorna il
+  "Progetto successivo" del progetto precedente (l'ultimo punta al primo).
 
 ## Dati da completare
 - LinkedIn: https://www.linkedin.com/in/giulia-sicari-195764a3/ (footer, menu mobile e `contatti.html`).

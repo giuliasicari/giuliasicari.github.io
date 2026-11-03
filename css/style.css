@@ -587,6 +587,45 @@ main { animation: page-in 0.8s var(--ease-out) both; }
 .values__color b { display: block; font-size: 13px; }
 .values .is-light figcaption { color: #3a2400; }
 
+/* Una linea di prodotti: render affiancati su fondo chiaro, con nome, bisogno e colore della linea */
+.lineup {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 0;
+  margin-inline: var(--gutter); padding: clamp(24px, 4vw, 56px) clamp(12px, 3vw, 40px);
+  background: var(--p-paper); color: var(--p-ink);
+}
+@media (min-width: 760px) { .lineup { grid-template-columns: repeat(5, 1fr); } }
+.lineup figure { display: flex; flex-direction: column; align-items: center; text-align: center; padding-bottom: 24px; }
+.lineup img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.lineup figcaption { display: grid; gap: 4px; justify-items: center; }
+.lineup b { font-weight: 700; font-size: clamp(1rem, 1.4vw, 1.25rem); color: var(--c); }
+.lineup span { font-size: 14px; }
+.lineup figcaption::after { content: ""; width: 32px; height: 4px; margin-top: 8px; background: var(--c); }
+
+/* Pannello chiaro per tavole tecniche (es. infografiche): le immagini restano intere */
+.panel-light {
+  display: grid; gap: clamp(24px, 4vw, 56px);
+  margin-inline: var(--gutter); padding: clamp(20px, 4vw, 64px);
+  background: #fff;
+}
+.panel-light img { width: 100%; height: auto; }
+@media (min-width: 900px) { .panel-light__pair { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 3vw, 48px); align-items: center; } }
+
+/* Pattern delle linee di prodotto: strisce verticali con nome e colore (dentro .system) */
+.lines { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.lines img { width: 100%; aspect-ratio: 1 / 2.4; object-fit: cover; }
+.lines--6 { grid-template-columns: repeat(3, 1fr); row-gap: 20px; }
+@media (min-width: 760px) { .lines--6 { grid-template-columns: repeat(6, 1fr); } }
+.lines figcaption { margin-top: 8px; font-size: 12px; line-height: 1.35; overflow-wrap: anywhere; }
+.lines figcaption b { display: block; font-weight: 700; }
+
+/* Caratteri del marchio: due colonne con lettera grande e alfabeto */
+.type { display: grid; gap: 24px; }
+@media (min-width: 760px) { .type { grid-template-columns: 1fr 1fr; } }
+.type div { padding: clamp(16px, 2vw, 28px); background: #fff; }
+.type__aa { font-size: clamp(4rem, 9vw, 7.5rem); line-height: 1; color: var(--p-1); }
+.type__name { margin-top: 12px; font-weight: 700; }
+.type__set { margin-top: 6px; font-size: 14px; line-height: 1.5; overflow-wrap: anywhere; }
+
 /* Numeri chiave del progetto, nello stile del sito (bianco su nero) */
 .facts {
   display: grid; gap: 32px 20px;
@@ -630,6 +669,55 @@ main { animation: page-in 0.8s var(--ease-out) both; }
 .swatch__chip--salvia  { --c: #67813b; }
 .swatch__chip--crema   { --c: #f5dea2; }
 .swatch__chip--bianco  { --c: #ffffff; }
+
+/* ---------- Progetto: Etjca ---------- */
+.project--etjca { --p-1: #0f102a; --p-2: #dc0711; --p-paper: #f2f2f4; --p-ink: #0f102a; }
+.swatch__chip--et-rosso  { --c: #dc0711; }
+.swatch__chip--et-blu    { --c: #0f102a; }
+.swatch__chip--et-grigio { --c: #7c858b; }
+
+/* ---------- Progetto: Momento ---------- */
+.project--momento { --p-1: #3d4a39; --p-2: #b89871; --p-paper: #fffbf4; --p-ink: #3d4a39; }
+.swatch__chip--mo-bosco   { --c: #3d4a39; }
+.swatch__chip--mo-cuoio   { --c: #b89871; }
+.swatch__chip--mo-sabbia  { --c: #cbb190; }
+.swatch__chip--mo-salvia-chiaro { --c: #b2baa6; }
+.swatch__chip--mo-salvia  { --c: #717d64; }
+.swatch__chip--mo-crema   { --c: #fffbf4; }
+
+/* ---------- Progetto: Al Passo ---------- */
+.project--al-passo { --p-1: #193153; --p-2: #c45160; --p-paper: #f9f5ea; --p-ink: #193153; }
+.values .c-ap-blu    figcaption { --c: #193153; }
+.values .c-ap-crema  figcaption { --c: #f1e9d8; }
+.values .c-ap-ottanio figcaption { --c: #609299; }
+.values .c-ap-rosso  figcaption { --c: #c45160; }
+
+/* ---------- Progetto: Zero ---------- */
+.project--zero { --p-1: #202720; --p-2: #b37f11; --p-paper: #f4f2ee; --p-ink: #202720; }
+.swatch__chip--ze-pietra { --c: #202720; }
+.swatch__chip--ze-oro    { --c: #b37f11; }
+
+/* ---------- Progetto: Postbiotica ---------- */
+.project--postbiotica {
+  --p-1: #003754;   /* blu notte */
+  --p-2: #85bc4a;   /* verde */
+  --p-paper: #eef4f6;
+  --p-ink: #003754;
+}
+.project--postbiotica .system,
+.project--postbiotica .lineup { font-family: "Ubuntu", var(--font); }
+.project--postbiotica .type__set--open { font-family: "Open Sans", var(--font); }
+.project--postbiotica .type__aa--ubuntu { font-family: "Ubuntu", var(--font); }
+.project--postbiotica .type__aa--open { font-family: "Open Sans", var(--font); }
+.c-pb-restore  { --c: #00a0d5; }
+.c-pb-motility { --c: #a92c88; }
+.c-pb-comfort  { --c: #00a465; }
+.c-pb-slowing  { --c: #e44a21; }
+.c-pb-immuno   { --c: #3a76bb; }
+.swatch__chip--pb-blu    { --c: #003754; }
+.swatch__chip--pb-verde  { --c: #85bc4a; }
+.swatch__chip--pb-azzurro { --c: #2b6ba4; }
+.swatch__chip--pb-menta  { --c: #a1d8cb; }
 
 /* ---------- Progetto: Hummus Around ---------- */
 .project--hummus .values { font-family: "Montserrat", var(--font); }  /* il carattere dei testi del marchio */

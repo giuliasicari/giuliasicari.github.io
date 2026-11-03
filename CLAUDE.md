@@ -26,7 +26,7 @@ about.html            Frase grande + blocchi (titolo piccolo a sinistra, testo g
 servizi.html          Frase grande + "I miei servizi" e "Come lavoro" in colonna stretta
 contatti.html         Frase grande + email, LinkedIn, base
 404.html              Pagina di errore (usa percorsi assoluti "/…")
-progetti/<slug>.html  Una pagina per progetto
+progetti/<slug>.html  Una pagina per progetto (modello v2: vedi sotto)
 images/<slug>/        Immagini del progetto: cover.jpg, 01.jpg … 04.jpg
 css/style.css  js/main.js  favicon.svg
 ```
@@ -42,8 +42,10 @@ Le pagine in `progetti/` usano percorsi relativi con `../` (es. `../css/style.cs
   - Tre misure: `--fs-body` (15px mobile, 18px desktop), `--fs-big` (frasi, About, footer),
     `--fs-statement` (frase-titolo di ogni pagina, classe `.statement`).
 - Nessuna linea, ombra, bordo arrotondato o gradiente. Le gerarchie si fanno con dimensione e grigio.
+  Eccezione approvata: dentro le tavole dei progetti (pagina progetto v2) l'ombra sotto i fogli e la
+  linea sotto le etichette della tavola di sintesi.
 - **Header:** trasparente in cima, box nero appena si scorre. In home c'è il nome a sinistra;
-  nelle pagine interne "← Torna a home" (classe `.back`). Menu sempre in alto a destra.
+  nelle pagine interne "← Torna alla home" (classe `.back`). Menu sempre in alto a destra.
 - **Layout Servizi/Contatti** (classe `.info`): griglia a 12 colonne; da 1200px etichetta in colonna 3–4
   e testo in colonna 5–8; tutto allo stesso peso e alla stessa misura del testo.
 - **Footer:** frase di contatto grande, link in grigio che diventano bianchi al passaggio.
@@ -66,7 +68,32 @@ Le pagine in `progetti/` usano percorsi relativi con `../` (es. `../css/style.cs
 - Tutti i testi in **italiano**, tono professionale e diretto, in prima persona nell'About.
 - Attributo `lang="it"` su ogni pagina; ogni immagine ha un `alt` descrittivo.
 
-## Aggiungere o modificare un progetto
+## Pagina progetto v2 (modello approvato da Giulia il 3/11/2026, primo esempio: `progetti/il-mannarino.html`)
+Stile Behance: guidata dalle immagini, pochissimo testo. Ordine:
+1. **Copertina** a tutta larghezza (`.hero` con `<picture>`): `cover.jpg` orizzontale 16:9 (2400×1350) e
+   `cover-mobile.jpg` verticale 2:3 (1200×1800) per i telefoni in verticale. Se manca sfondo per la versione
+   verticale, ricostruirlo; ripiego: logo su fondo pieno nel colore del marchio.
+2. **Solo Cliente e Ambito** in piccolo (`.hero-meta`). Niente Ruolo, niente Anno.
+3. **Una sola frase** (`.project-intro`), niente titolo grande: il nome è già nella copertina
+   (l'`<h1>` resta con `.visually-hidden`). Il blocco è alto uno schermo: pausa ampia prima delle tavole (voluta).
+4. **Tavole** dentro `.flow`: righe `.row` / `.row--2` / `.row--3`; fondo colorato `.stage`; foglio su fondo
+   del marchio `.sheet-stage` (es. manifesto impaginato come immagine nello stile del cliente).
+5. Facoltativi: testate di sezione `.section` (solo se aggiungono qualcosa alle immagini) e tavola di sintesi
+   `.system` (colore, texture; "Dove vive il marchio" `.touch` solo per identità con molti supporti).
+6. **Niente crediti** e niente nome dell'agenzia.
+7. Fine pagina `.project-nav`: "← Torna ai lavori" a sinistra, "Progetto successivo →" piccolo a destra.
+- In alto "← Torna alla home" con `href="../index.html#<slug>"`: la home si riapre sul pannello del progetto
+- Colori del progetto: variabili `--p-1`, `--p-2`, `--p-paper`, `--p-ink` su `.project--<slug>`,
+  in una sezione dedicata in fondo ai moduli in `style.css` (insieme ai campioni `.swatch__chip--<nome>`).
+- Immagini con nomi descrittivi in `images/<slug>/` (es. `cover.jpg`, `cover-mobile.jpg`, `manifesto.jpg`,
+  `poster-1.jpg`). Senza bordi bianchi: rifilare o ingrandire leggermente per riempire il formato.
+- In home il pannello ha `id="<slug>"` e la `<picture>` con la copertina verticale; in Lavori la tavola 4:5
+  usa `cover-mobile.jpg`.
+- Sorgenti e prototipi restano fuori dal repo, in `C:\Claude_Folder\portfolio-prototipi\` (repo pubblico).
+- Da valutare: quali progetti vanno in home (gli altri solo in Lavori). Le pagine dei vecchi progetti
+  (Conad, Ecopneus, IDNTT, EVway, Grimaldi) usano ancora il modello v1 qui sotto.
+
+## Aggiungere o modificare un progetto (modello v1, da sostituire con il v2)
 1. Crea `images/<slug>/` con `cover.jpg` (consigliato 1920×1440; in Lavori viene ritagliata in 4:5,
    in home a tutto schermo: tieni il soggetto al centro) e le immagini della galleria
    (`01.jpg` e `04.jpg` orizzontali 16:9 a tutta larghezza, `02.jpg` e `03.jpg` verticali 4:5 affiancate).

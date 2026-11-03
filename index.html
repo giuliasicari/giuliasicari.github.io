@@ -8,11 +8,11 @@
   <meta property="og:title" content="Giulia Sicari — Art Director, Milano">
   <meta property="og:description" content="Portfolio di Giulia Sicari, art director a Milano. Branding, art direction, social e comunicazione B2B/B2C.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#fafaf8">
+  <meta name="theme-color" content="#000000">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,800&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script>document.documentElement.classList.add('js');</script>
   <script src="js/main.js" defer></script>
@@ -21,96 +21,78 @@
   <a class="skip-link" href="#contenuto">Vai al contenuto</a>
 
   <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="index.html">Giulia Sicari<span>.</span></a>
-      <nav class="nav" aria-label="Navigazione principale">
-        <ul>
-          <li><a href="index.html#lavori">Lavori</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="servizi.html">Servizi</a></li>
-          <li><a href="contatti.html">Contatti</a></li>
-        </ul>
-      </nav>
-    </div>
+    <a class="brand" href="index.html">Giulia Sicari</a>
+    <nav class="nav" aria-label="Navigazione principale">
+      <ul>
+        <li><a href="lavori.html">Lavori</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="servizi.html">Servizi</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Apri il menu">
+      <span class="menu-toggle__bars"></span><span class="menu-toggle__x"></span>
+    </button>
   </header>
 
+  <nav class="mobile-menu" id="menu-mobile" aria-label="Menu">
+    <ul>
+      <li><a href="lavori.html">Lavori</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="servizi.html">Servizi</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+    <div class="mobile-menu__foot">
+      <a href="mailto:giuliasicari93@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/giulia-sicari-195764a3/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </nav>
+
   <main id="contenuto">
-    <section class="hero wrap">
-      <p class="label">Portfolio — Milano</p>
-      <h1 class="hero__title display">Giulia<br>Sicari<span class="accent">.</span></h1>
-      <div class="hero__bottom">
-        <p class="hero__role">Art Director</p>
-        <p class="lead">Do forma a marchi e campagne con un'idea chiara e un segno pulito: branding, art direction, social e comunicazione B2B/B2C.</p>
+    <section class="intro">
+      <h1 class="intro__title">Idee chiare, segni puliti.</h1>
+      <div class="intro__sub">
+        <p>Art director, Milano</p>
+        <p>Branding · Art direction · Social</p>
       </div>
     </section>
 
-    <section class="works wrap" id="lavori" aria-labelledby="lavori-titolo">
-      <div class="section-head">
-        <h2 class="label" id="lavori-titolo">Lavori selezionati</h2>
-        <span class="label">05</span>
-      </div>
-      <div class="grid">
-        <a class="card reveal" href="progetti/conad-nord-ovest.html">
-          <div class="card__media">
-            <img src="images/conad-nord-ovest/cover.jpg" alt="Conad Nord Ovest — anteprima del progetto" width="1920" height="1440" loading="eager">
-          </div>
-          <div class="card__info">
-            <span class="card__index">01</span>
-            <h3 class="card__title">Conad Nord Ovest</h3>
-            <p class="card__tags">Comunicazione locale · Social · Reels</p>
-          </div>
-        </a>
-        <a class="card reveal" href="progetti/ecopneus.html">
-          <div class="card__media">
-            <img src="images/ecopneus/cover.jpg" alt="Ecopneus — anteprima del progetto" width="1920" height="1440" loading="lazy">
-          </div>
-          <div class="card__info">
-            <span class="card__index">02</span>
-            <h3 class="card__title">Ecopneus</h3>
-            <p class="card__tags">Sostenibilità · Tecnologia</p>
-          </div>
-        </a>
-        <a class="card reveal" href="progetti/idntt-everywhere.html">
-          <div class="card__media">
-            <img src="images/idntt-everywhere/cover.jpg" alt="IDNTT Everywhere — anteprima del progetto" width="1920" height="1440" loading="lazy">
-          </div>
-          <div class="card__info">
-            <span class="card__index">03</span>
-            <h3 class="card__title">IDNTT Everywhere</h3>
-            <p class="card__tags">Logo · Identità</p>
-          </div>
-        </a>
-        <a class="card reveal" href="progetti/evway-route220.html">
-          <div class="card__media">
-            <img src="images/evway-route220/cover.jpg" alt="EVway / Route220 — anteprima del progetto" width="1920" height="1440" loading="lazy">
-          </div>
-          <div class="card__info">
-            <span class="card__index">04</span>
-            <h3 class="card__title">EVway / Route220</h3>
-            <p class="card__tags">Branding · Comunicazione</p>
-          </div>
-        </a>
-        <a class="card reveal" href="progetti/grimaldi.html">
-          <div class="card__media">
-            <img src="images/grimaldi/cover.jpg" alt="Grimaldi — anteprima del progetto" width="1920" height="1440" loading="lazy">
-          </div>
-          <div class="card__info">
-            <span class="card__index">05</span>
-            <h3 class="card__title">Grimaldi</h3>
-            <p class="card__tags">Editoriale · Print</p>
-          </div>
-        </a>
-      </div>
+    <section aria-label="Lavori in evidenza">
+      <a class="panel" id="il-mannarino" href="progetti/il-mannarino.html">
+        <picture>
+          <source media="(max-width: 759px) and (orientation: portrait)" srcset="images/il-mannarino/cover-mobile.jpg" width="1200" height="1800">
+          <img src="images/il-mannarino/cover.jpg" alt="Il Mannarino — anteprima del progetto" width="2400" height="1350" loading="eager">
+        </picture>
+        <span class="panel__caption"><span class="panel__index">01</span><span>Il Mannarino</span></span>
+      </a>
+      <a class="panel" id="conad-nord-ovest" href="progetti/conad-nord-ovest.html">
+        <img src="images/conad-nord-ovest/cover.jpg" alt="Conad Nord Ovest — anteprima del progetto" width="1920" height="1440" loading="lazy">
+        <span class="panel__caption"><span class="panel__index">02</span><span>Conad Nord Ovest</span></span>
+      </a>
+      <a class="panel" id="ecopneus" href="progetti/ecopneus.html">
+        <img src="images/ecopneus/cover.jpg" alt="Ecopneus — anteprima del progetto" width="1920" height="1440" loading="lazy">
+        <span class="panel__caption"><span class="panel__index">03</span><span>Ecopneus</span></span>
+      </a>
+      <a class="panel" id="idntt-everywhere" href="progetti/idntt-everywhere.html">
+        <img src="images/idntt-everywhere/cover.jpg" alt="IDNTT Everywhere — anteprima del progetto" width="1920" height="1440" loading="lazy">
+        <span class="panel__caption"><span class="panel__index">04</span><span>IDNTT Everywhere</span></span>
+      </a>
+      <a class="panel" id="evway-route220" href="progetti/evway-route220.html">
+        <img src="images/evway-route220/cover.jpg" alt="EVway / Route220 — anteprima del progetto" width="1920" height="1440" loading="lazy">
+        <span class="panel__caption"><span class="panel__index">05</span><span>EVway / Route220</span></span>
+      </a>
+      <a class="panel" id="grimaldi" href="progetti/grimaldi.html">
+        <img src="images/grimaldi/cover.jpg" alt="Grimaldi — anteprima del progetto" width="1920" height="1440" loading="lazy">
+        <span class="panel__caption"><span class="panel__index">06</span><span>Grimaldi</span></span>
+      </a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p>© <span data-year>2026</span> Giulia Sicari — Art Director, Milano</p>
-      <ul>
-        <li><a href="mailto:giuliasicari93@gmail.com">Email</a></li>
-        <li><a href="https://www.linkedin.com/in/giulia-sicari-195764a3/" target="_blank" rel="noopener">LinkedIn</a></li>
-      </ul>
+    <p class="site-footer__text reveal">Mi fa sempre piacere conoscere persone e progetti nuovi. Scrivimi a <a href="mailto:giuliasicari93@gmail.com">giuliasicari93@gmail.com</a> o su <a href="https://www.linkedin.com/in/giulia-sicari-195764a3/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    <div class="site-footer__bottom">
+      <p>© <span data-year>2026</span> Giulia Sicari</p>
+      <p>Art Director, Milano</p>
     </div>
   </footer>
 </body>

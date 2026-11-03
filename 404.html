@@ -8,11 +8,11 @@
   <meta property="og:title" content="Pagina non trovata — Giulia Sicari">
   <meta property="og:description" content="Pagina non trovata.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#fafaf8">
+  <meta name="theme-color" content="#000000">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,800&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
   <script>document.documentElement.classList.add('js');</script>
   <script src="/js/main.js" defer></script>
@@ -21,34 +21,50 @@
   <a class="skip-link" href="#contenuto">Vai al contenuto</a>
 
   <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="/index.html">Giulia Sicari<span>.</span></a>
-      <nav class="nav" aria-label="Navigazione principale">
-        <ul>
-          <li><a href="/index.html#lavori">Lavori</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/servizi.html">Servizi</a></li>
-          <li><a href="/contatti.html">Contatti</a></li>
-        </ul>
-      </nav>
-    </div>
+    <a class="back" href="/index.html"><span aria-hidden="true">←</span> Torna a home</a>
+    <nav class="nav" aria-label="Navigazione principale">
+      <ul>
+        <li><a href="/lavori.html">Lavori</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/servizi.html">Servizi</a></li>
+        <li><a href="/contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Apri il menu">
+      <span class="menu-toggle__bars"></span><span class="menu-toggle__x"></span>
+    </button>
   </header>
 
+  <nav class="mobile-menu" id="menu-mobile" aria-label="Menu">
+    <ul>
+      <li><a href="/lavori.html">Lavori</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/servizi.html">Servizi</a></li>
+      <li><a href="/contatti.html">Contatti</a></li>
+    </ul>
+    <div class="mobile-menu__foot">
+      <a href="mailto:giuliasicari93@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/giulia-sicari-195764a3/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </nav>
+
   <main id="contenuto">
-    <header class="page-head wrap" style="padding-bottom: var(--space-xl)">
-      <p class="label">Errore 404</p>
-      <h1 class="page-head__title display">Pagina non<br>trovata<span class="accent">.</span></h1>
-      <p style="margin-top: var(--space-m)"><a class="link-underline" href="/index.html">Torna alla home</a></p>
+    <header class="page-head">
+      <h1 class="statement">Pagina non trovata.</h1>
     </header>
+    <section class="info" aria-label="Dove andare">
+      <h2>Errore 404</h2>
+      <div class="info__body">
+        <p>La pagina che cerchi non esiste o è stata spostata.</p>
+        <a class="info__link" href="/lavori.html">Guarda i lavori</a>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p>© <span data-year>2026</span> Giulia Sicari — Art Director, Milano</p>
-      <ul>
-        <li><a href="mailto:giuliasicari93@gmail.com">Email</a></li>
-        <li><a href="https://www.linkedin.com/in/giulia-sicari-195764a3/" target="_blank" rel="noopener">LinkedIn</a></li>
-      </ul>
+    <div class="site-footer__bottom">
+      <p>© <span data-year>2026</span> Giulia Sicari</p>
+      <p>Art Director, Milano</p>
     </div>
   </footer>
 </body>

@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Servizi — Giulia Sicari</title>
-  <meta name="description" content="Servizi di Giulia Sicari, art director a Milano: brand identity, art direction, graphic design, social media, contenuti AI e video making.">
+  <meta name="description" content="Brand identity, art direction, graphic ed editorial design, social media, contenuti AI e video: un solo referente e un team su misura.">
   <meta property="og:title" content="Servizi — Giulia Sicari">
-  <meta property="og:description" content="Servizi di Giulia Sicari, art director a Milano: brand identity, art direction, graphic design, social media, contenuti AI e video making.">
+  <meta property="og:description" content="Brand identity, art direction, graphic ed editorial design, social media, contenuti AI e video: un solo referente e un team su misura.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#fafaf8">
+  <meta name="theme-color" content="#000000">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,800&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script>document.documentElement.classList.add('js');</script>
   <script src="js/main.js" defer></script>
@@ -21,104 +21,101 @@
   <a class="skip-link" href="#contenuto">Vai al contenuto</a>
 
   <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="index.html">Giulia Sicari<span>.</span></a>
-      <nav class="nav" aria-label="Navigazione principale">
-        <ul>
-          <li><a href="index.html#lavori">Lavori</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="servizi.html" aria-current="page">Servizi</a></li>
-          <li><a href="contatti.html">Contatti</a></li>
-        </ul>
-      </nav>
-    </div>
+    <a class="back" href="index.html"><span aria-hidden="true">←</span> Torna a home</a>
+    <nav class="nav" aria-label="Navigazione principale">
+      <ul>
+        <li><a href="lavori.html">Lavori</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="servizi.html" aria-current="page">Servizi</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Apri il menu">
+      <span class="menu-toggle__bars"></span><span class="menu-toggle__x"></span>
+    </button>
   </header>
 
+  <nav class="mobile-menu" id="menu-mobile" aria-label="Menu">
+    <ul>
+      <li><a href="lavori.html">Lavori</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="servizi.html" aria-current="page">Servizi</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+    <div class="mobile-menu__foot">
+      <a href="mailto:giuliasicari93@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/giulia-sicari-195764a3/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </nav>
+
   <main id="contenuto">
-    <header class="page-head wrap">
-      <p class="label">Servizi</p>
-      <h1 class="page-head__title display">Un solo referente,<br>un team su misura<span class="accent">.</span></h1>
+    <header class="page-head">
+      <h1 class="statement">Un solo referente.<br> Un team su misura.</h1>
     </header>
 
-    <section class="services wrap" aria-labelledby="servizi-titolo">
-      <p class="lead services__intro">Curo la direzione creativa di ogni progetto e, quando serve, coordino un network di professionisti selezionati per video, social e contenuti.</p>
-      <div class="section-head">
-        <h2 class="label" id="servizi-titolo">Cosa posso fare per te</h2>
-        <span class="label">05</span>
+    <section class="info" aria-labelledby="servizi-titolo">
+      <h2 id="servizi-titolo">I miei servizi</h2>
+      <div class="info__body">
+        <p>Curo la direzione creativa di ogni progetto e, quando serve, coordino un network di professionisti selezionati per video, social e contenuti.</p>
+
+        <div class="info__item reveal">
+          <h3>Brand identity e art direction</h3>
+          <p>Logo, identità visiva, campagne e direzione creativa: un linguaggio riconoscibile e coerente su ogni punto di contatto.</p>
+        </div>
+        <div class="info__item reveal">
+          <h3>Graphic ed editorial design</h3>
+          <p>Materiali stampati e digitali, impaginati, presentazioni e comunicazione B2B e B2C, curati in ogni dettaglio.</p>
+        </div>
+        <div class="info__item reveal">
+          <h3>Social media management</h3>
+          <p>Strategia, piano editoriale e gestione dei canali, con contenuti pensati per ogni piattaforma e pubblico.</p>
+        </div>
+        <div class="info__item reveal">
+          <h3>Contenuti AI</h3>
+          <p>Immagini e contenuti generati con l'intelligenza artificiale, guidati dalla direzione creativa per restare fedeli al brand.</p>
+        </div>
+        <div class="info__item reveal">
+          <h3>Video making</h3>
+          <p>Spot, videoclip e Reels: dal concept allo storyboard, fino a riprese, montaggio e consegna.</p>
+        </div>
+
+        <a class="info__link" href="lavori.html">Guarda i lavori</a>
       </div>
-      <ul class="services__list">
-        <li class="service reveal">
-          <span class="service__index">01</span>
-          <h3 class="service__title">Brand identity & Art direction</h3>
-          <p class="service__text">Logo, identità visiva, campagne e direzione creativa: un linguaggio riconoscibile e coerente su ogni punto di contatto.</p>
-        </li>
-        <li class="service reveal">
-          <span class="service__index">02</span>
-          <h3 class="service__title">Graphic & Editorial design</h3>
-          <p class="service__text">Materiali stampati e digitali, impaginati, presentazioni e comunicazione B2B e B2C, curati in ogni dettaglio.</p>
-        </li>
-        <li class="service reveal">
-          <span class="service__index">03</span>
-          <h3 class="service__title">Social media management</h3>
-          <p class="service__text">Strategia, piano editoriale e gestione dei canali, con contenuti pensati per ogni piattaforma e pubblico.</p>
-        </li>
-        <li class="service reveal">
-          <span class="service__index">04</span>
-          <h3 class="service__title">Contenuti AI</h3>
-          <p class="service__text">Immagini e contenuti generati con l'intelligenza artificiale, guidati dalla direzione creativa per restare fedeli al brand.</p>
-        </li>
-        <li class="service reveal">
-          <span class="service__index">05</span>
-          <h3 class="service__title">Video making</h3>
-          <p class="service__text">Spot, videoclip e Reels: dal concept allo storyboard, fino a riprese, montaggio e consegna.</p>
-        </li>
-      </ul>
     </section>
 
-    <section class="process wrap" aria-labelledby="processo-titolo">
-      <div class="section-head">
-        <h2 class="label" id="processo-titolo">Come lavoro</h2>
-      </div>
-      <ol class="process__list">
-        <li class="step reveal">
-          <span class="step__index">01</span>
-          <h3 class="step__title">Brief</h3>
-          <p class="step__text">Ascolto obiettivi, pubblico e vincoli del progetto, e definiamo insieme cosa serve davvero.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step__index">02</span>
-          <h3 class="step__title">Direzione creativa</h3>
-          <p class="step__text">Costruisco l'idea e il linguaggio visivo, e scelgo le competenze giuste per realizzarli.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step__index">03</span>
-          <h3 class="step__title">Produzione</h3>
-          <p class="step__text">Coordino il team e seguo ogni fase, perché il risultato resti coerente con l'idea iniziale.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step__index">04</span>
-          <h3 class="step__title">Consegna</h3>
-          <p class="step__text">Ricevi i materiali pronti all'uso, con un solo referente dall'inizio alla fine.</p>
-        </li>
-      </ol>
-    </section>
+    <section class="info" aria-labelledby="processo-titolo">
+      <h2 id="processo-titolo">Come lavoro</h2>
+      <div class="info__body">
+        <p>Dal primo incontro alla consegna, segui un solo referente.</p>
 
-    <div class="wrap">
-      <a class="next-project" href="contatti.html">
-        <span class="label">Hai un progetto?</span>
-        <p class="next-project__title display">Raccontamelo <span class="next-project__arrow accent" aria-hidden="true">→</span></p>
-        <p class="cta-note">Su richiesta posso condividere reference e lavori del team.</p>
-      </a>
-    </div>
+        <div class="info__item reveal">
+          <h3>Brief</h3>
+          <p>Ascolto obiettivi, pubblico e vincoli del progetto, e definiamo insieme cosa serve davvero.</p>
+        </div>
+        <div class="info__item reveal">
+          <h3>Direzione creativa</h3>
+          <p>Costruisco l'idea e il linguaggio visivo, e scelgo le competenze giuste per realizzarli.</p>
+        </div>
+        <div class="info__item reveal">
+          <h3>Produzione</h3>
+          <p>Coordino il team e seguo ogni fase, perché il risultato resti coerente con l'idea iniziale.</p>
+        </div>
+        <div class="info__item reveal">
+          <h3>Consegna</h3>
+          <p>Ricevi i materiali pronti all'uso, con un solo referente dall'inizio alla fine.</p>
+        </div>
+
+        <p class="info__item">Su richiesta posso condividere reference e lavori del team.</p>
+        <a class="info__link" href="contatti.html">Raccontami il tuo progetto</a>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p>© <span data-year>2026</span> Giulia Sicari — Art Director, Milano</p>
-      <ul>
-        <li><a href="mailto:giuliasicari93@gmail.com">Email</a></li>
-        <li><a href="https://www.linkedin.com/in/giulia-sicari-195764a3/" target="_blank" rel="noopener">LinkedIn</a></li>
-      </ul>
+    <p class="site-footer__text reveal">Mi fa sempre piacere conoscere persone e progetti nuovi. Scrivimi a <a href="mailto:giuliasicari93@gmail.com">giuliasicari93@gmail.com</a> o su <a href="https://www.linkedin.com/in/giulia-sicari-195764a3/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    <div class="site-footer__bottom">
+      <p>© <span data-year>2026</span> Giulia Sicari</p>
+      <p>Art Director, Milano</p>
     </div>
   </footer>
 </body>

@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About — Giulia Sicari</title>
-  <meta name="description" content="Giulia Sicari, art director a Milano: bio, competenze e strumenti.">
+  <meta name="description" content="Giulia Sicari, art director a Milano: formazione, esperienza, competenze e strumenti.">
   <meta property="og:title" content="About — Giulia Sicari">
-  <meta property="og:description" content="Giulia Sicari, art director a Milano: bio, competenze e strumenti.">
+  <meta property="og:description" content="Giulia Sicari, art director a Milano: formazione, esperienza, competenze e strumenti.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#fafaf8">
+  <meta name="theme-color" content="#000000">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,800&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script>document.documentElement.classList.add('js');</script>
   <script src="js/main.js" defer></script>
@@ -21,75 +21,82 @@
   <a class="skip-link" href="#contenuto">Vai al contenuto</a>
 
   <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="index.html">Giulia Sicari<span>.</span></a>
-      <nav class="nav" aria-label="Navigazione principale">
-        <ul>
-          <li><a href="index.html#lavori">Lavori</a></li>
-          <li><a href="about.html" aria-current="page">About</a></li>
-          <li><a href="servizi.html">Servizi</a></li>
-          <li><a href="contatti.html">Contatti</a></li>
-        </ul>
-      </nav>
-    </div>
+    <a class="back" href="index.html"><span aria-hidden="true">←</span> Torna a home</a>
+    <nav class="nav" aria-label="Navigazione principale">
+      <ul>
+        <li><a href="lavori.html">Lavori</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="servizi.html">Servizi</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Apri il menu">
+      <span class="menu-toggle__bars"></span><span class="menu-toggle__x"></span>
+    </button>
   </header>
 
+  <nav class="mobile-menu" id="menu-mobile" aria-label="Menu">
+    <ul>
+      <li><a href="lavori.html">Lavori</a></li>
+      <li><a href="about.html" aria-current="page">About</a></li>
+      <li><a href="servizi.html">Servizi</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+    <div class="mobile-menu__foot">
+      <a href="mailto:giuliasicari93@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/giulia-sicari-195764a3/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </nav>
+
   <main id="contenuto">
-    <header class="page-head wrap">
-      <p class="label">About</p>
-      <h1 class="page-head__title display">Ciao, sono<br>Giulia<span class="accent">.</span></h1>
+    <header class="page-head">
+      <h1 class="statement">Idee semplici, costruite con cura.</h1>
     </header>
 
-    <div class="about wrap">
-      <div class="about__bio reveal">
-        <p class="lead">Art director a Milano. Credo nelle idee semplici, costruite con cura.</p>
-        <p>Mi sono laureata in Product Design al Politecnico di Milano, dove ho imparato a progettare partendo dalle persone e dal metodo. Da oltre cinque anni lavoro in agenzia, in Take, dove sono cresciuta dal graphic design all'art direction.</p>
-        <p>Mi occupo di branding, art direction, social e comunicazione B2B e B2C: dall'identità di un marchio alla campagna, dal piano editoriale al singolo contenuto. Lavoro a stretto contatto con copywriter, strategist e clienti per trasformare un obiettivo in un linguaggio visivo chiaro e riconoscibile.</p>
-      </div>
-
-      <div class="about__cols">
-        <section class="list-block reveal" aria-labelledby="esperienza">
-          <h2 class="label" id="esperienza">Esperienza e formazione</h2>
-          <ul>
-            <li>Art Director — Take<small>Agenzia di comunicazione, Milano</small></li>
-            <li>Graphic Designer — Take<small>Agenzia di comunicazione, Milano</small></li>
-            <li>Laurea in Product Design<small>Politecnico di Milano</small></li>
-          </ul>
-        </section>
-        <section class="list-block reveal" aria-labelledby="competenze">
-          <h2 class="label" id="competenze">Competenze</h2>
-          <ul>
-            <li>Art direction</li>
-            <li>Brand identity</li>
-            <li>Graphic design</li>
-            <li>Social media e contenuti</li>
-            <li>Comunicazione B2B e B2C</li>
-            <li>Editorial design</li>
-            <li>Campagne adv</li>
-          </ul>
-        </section>
-        <section class="list-block reveal" aria-labelledby="strumenti">
-          <h2 class="label" id="strumenti">Strumenti</h2>
-          <ul>
-            <li>Adobe Photoshop</li>
-            <li>Adobe Illustrator</li>
-            <li>Adobe InDesign</li>
-            <li>Adobe After Effects</li>
-            <li>Adobe Premiere Pro</li>
-            <li>Figma</li>
-          </ul>
-        </section>
-      </div>
+    <div class="blocks">
+      <section class="block reveal">
+        <h2>Chi sono</h2>
+        <div>
+          <p>Sono art director a Milano. Da oltre cinque anni lavoro in agenzia, in Take, dove sono cresciuta dal graphic design all'art direction.</p>
+        </div>
+      </section>
+      <section class="block reveal">
+        <h2>Prima il metodo</h2>
+        <div>
+          <p>Mi sono laureata in Product Design al Politecnico di Milano, dove ho imparato a progettare partendo dalle persone e dal metodo.</p>
+        </div>
+      </section>
+      <section class="block reveal">
+        <h2>Cosa faccio</h2>
+        <div>
+          <p>Branding, art direction, social e comunicazione B2B e B2C: dall'identità di un marchio alla campagna, dal piano editoriale al singolo contenuto.</p>
+          <p>Lavoro a stretto contatto con copywriter, strategist e clienti per trasformare un obiettivo in un linguaggio visivo chiaro e riconoscibile.</p>
+        </div>
+      </section>
+      <section class="block reveal">
+        <h2>Esperienza e formazione</h2>
+        <ul>
+          <li>Art Director — Take<small>Agenzia di comunicazione, Milano</small></li>
+          <li>Graphic Designer — Take<small>Agenzia di comunicazione, Milano</small></li>
+          <li>Laurea in Product Design<small>Politecnico di Milano</small></li>
+        </ul>
+      </section>
+      <section class="block reveal">
+        <h2>Competenze</h2>
+        <p>Art direction, brand identity, graphic design, social media e contenuti, comunicazione B2B e B2C, editorial design, campagne adv.</p>
+      </section>
+      <section class="block reveal">
+        <h2>Strumenti</h2>
+        <p class="muted">Photoshop, Illustrator, InDesign, After Effects, Premiere Pro, Figma.</p>
+      </section>
     </div>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p>© <span data-year>2026</span> Giulia Sicari — Art Director, Milano</p>
-      <ul>
-        <li><a href="mailto:giuliasicari93@gmail.com">Email</a></li>
-        <li><a href="https://www.linkedin.com/in/giulia-sicari-195764a3/" target="_blank" rel="noopener">LinkedIn</a></li>
-      </ul>
+    <p class="site-footer__text reveal">Mi fa sempre piacere conoscere persone e progetti nuovi. Scrivimi a <a href="mailto:giuliasicari93@gmail.com">giuliasicari93@gmail.com</a> o su <a href="https://www.linkedin.com/in/giulia-sicari-195764a3/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    <div class="site-footer__bottom">
+      <p>© <span data-year>2026</span> Giulia Sicari</p>
+      <p>Art Director, Milano</p>
     </div>
   </footer>
 </body>

@@ -7,12 +7,12 @@
   <meta name="description" content="Materiali editoriali dal tono elegante e senza tempo.">
   <meta property="og:title" content="Grimaldi — Giulia Sicari">
   <meta property="og:description" content="Materiali editoriali dal tono elegante e senza tempo.">
-  <meta property="og:type" content="website">
-  <meta name="theme-color" content="#fafaf8">
+  <meta property="og:type" content="article">
+  <meta name="theme-color" content="#000000">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,800&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <script>document.documentElement.classList.add('js');</script>
   <script src="../js/main.js" defer></script>
@@ -21,61 +21,69 @@
   <a class="skip-link" href="#contenuto">Vai al contenuto</a>
 
   <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="../index.html">Giulia Sicari<span>.</span></a>
-      <nav class="nav" aria-label="Navigazione principale">
-        <ul>
-          <li><a href="../index.html#lavori" aria-current="page">Lavori</a></li>
-          <li><a href="../about.html">About</a></li>
-          <li><a href="../servizi.html">Servizi</a></li>
-          <li><a href="../contatti.html">Contatti</a></li>
-        </ul>
-      </nav>
-    </div>
+    <a class="back" href="../index.html"><span aria-hidden="true">←</span> Torna a home</a>
+    <nav class="nav" aria-label="Navigazione principale">
+      <ul>
+        <li><a href="../lavori.html" aria-current="page">Lavori</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../servizi.html">Servizi</a></li>
+        <li><a href="../contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Apri il menu">
+      <span class="menu-toggle__bars"></span><span class="menu-toggle__x"></span>
+    </button>
   </header>
+
+  <nav class="mobile-menu" id="menu-mobile" aria-label="Menu">
+    <ul>
+      <li><a href="../lavori.html" aria-current="page">Lavori</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../servizi.html">Servizi</a></li>
+      <li><a href="../contatti.html">Contatti</a></li>
+    </ul>
+    <div class="mobile-menu__foot">
+      <a href="mailto:giuliasicari93@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/giulia-sicari-195764a3/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </nav>
 
   <main id="contenuto">
     <article>
-      <header class="project-head wrap">
-        <a class="back" href="../index.html#lavori"><span aria-hidden="true">←</span> Tutti i lavori</a>
-        <p class="label">Progetto 05</p>
-        <h1 class="project-head__title display">Grimaldi</h1>
-        <div class="project-meta">
-          <dl>
-            <div><dt class="label">Cliente</dt><dd>Grimaldi</dd></div>
-            <div><dt class="label">Ruolo</dt><dd>Art direction, editorial design</dd></div>
-            <div><dt class="label">Ambito</dt><dd>Materiali editoriali</dd></div>
-          </dl>
-          <div>
-            <p class="lead">Materiali editoriali dal tono elegante e senza tempo.</p>
-            <p class="project-body">Progettazione di materiali editoriali curati nei dettagli: impaginazione, gerarchie tipografiche e uso dell'immagine al servizio di un racconto raffinato, coerente con il posizionamento del marchio.</p>
-          </div>
-        </div>
+      <header class="page-head">
+        <h1 class="statement">Grimaldi</h1>
       </header>
+      <div class="project-meta">
+        <dl>
+          <div><dt>Cliente</dt><dd>Grimaldi</dd></div>
+          <div><dt>Ruolo</dt><dd>Art direction, editorial design</dd></div>
+          <div><dt>Ambito</dt><dd>Materiali editoriali</dd></div>
+        </dl>
+        <div>
+          <p class="lead">Materiali editoriali dal tono elegante e senza tempo.</p>
+          <p>Progettazione di materiali editoriali curati nei dettagli: impaginazione, gerarchie tipografiche e uso dell'immagine al servizio di un racconto raffinato, coerente con il posizionamento del marchio.</p>
+        </div>
+      </div>
 
-      <div class="gallery wrap">
-      <figure class="full reveal"><img src="../images/grimaldi/01.jpg" alt="Grimaldi — immagine 1" width="2400" height="1350" loading="eager"></figure>
-      <figure class="reveal"><img src="../images/grimaldi/02.jpg" alt="Grimaldi — immagine 2" width="1600" height="2000" loading="lazy"></figure>
-      <figure class="reveal"><img src="../images/grimaldi/03.jpg" alt="Grimaldi — immagine 3" width="1600" height="2000" loading="lazy"></figure>
-      <figure class="full reveal"><img src="../images/grimaldi/04.jpg" alt="Grimaldi — immagine 4" width="2400" height="1350" loading="lazy"></figure>
+      <div class="gallery">
+        <figure class="reveal"><img src="../images/grimaldi/01.jpg" alt="Grimaldi — immagine 1" width="2400" height="1350" loading="eager"></figure>
+        <figure class="half reveal"><img src="../images/grimaldi/02.jpg" alt="Grimaldi — immagine 2" width="1600" height="2000" loading="lazy"></figure>
+        <figure class="half reveal"><img src="../images/grimaldi/03.jpg" alt="Grimaldi — immagine 3" width="1600" height="2000" loading="lazy"></figure>
+        <figure class="reveal"><img src="../images/grimaldi/04.jpg" alt="Grimaldi — immagine 4" width="2400" height="1350" loading="lazy"></figure>
       </div>
     </article>
 
-    <div class="wrap">
-      <a class="next-project" href="conad-nord-ovest.html">
-        <span class="label">Progetto successivo</span>
-        <p class="next-project__title display">Conad Nord Ovest <span class="next-project__arrow accent" aria-hidden="true">→</span></p>
-      </a>
-    </div>
+    <a class="next-project" href="il-mannarino.html">
+      <span class="muted">Progetto successivo</span>
+      <span class="next-project__title">Il Mannarino</span>
+    </a>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p>© <span data-year>2026</span> Giulia Sicari — Art Director, Milano</p>
-      <ul>
-        <li><a href="mailto:giuliasicari93@gmail.com">Email</a></li>
-        <li><a href="https://www.linkedin.com/in/giulia-sicari-195764a3/" target="_blank" rel="noopener">LinkedIn</a></li>
-      </ul>
+    <p class="site-footer__text reveal">Mi fa sempre piacere conoscere persone e progetti nuovi. Scrivimi a <a href="mailto:giuliasicari93@gmail.com">giuliasicari93@gmail.com</a> o su <a href="https://www.linkedin.com/in/giulia-sicari-195764a3/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    <div class="site-footer__bottom">
+      <p>© <span data-year>2026</span> Giulia Sicari</p>
+      <p>Art Director, Milano</p>
     </div>
   </footer>
 </body>

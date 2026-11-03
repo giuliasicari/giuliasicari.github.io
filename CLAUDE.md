@@ -109,7 +109,8 @@ Stile Behance: guidata dalle immagini, pochissimo testo. Ordine:
 - Immagini con nomi descrittivi in `images/<slug>/` (es. `cover.jpg`, `cover-mobile.jpg`, `manifesto.jpg`,
   `poster-1.jpg`). Senza bordi bianchi: rifilare o ingrandire leggermente per riempire il formato.
 - In home il pannello ha `id="<slug>"` e la `<picture>` con la copertina verticale; in Lavori la tavola 4:5
-  usa `cover-mobile.jpg`.
+  usa `cover-mobile.jpg`, oppure `card.jpg` (4:5) se il ritaglio taglierebbe il soggetto: il prodotto o le persone
+  devono vedersi interi anche nella tavola.
 - Sorgenti e prototipi restano fuori dal repo, in `C:\Claude_Folder\portfolio-prototipi\` (repo pubblico).
 - Progetti (3/11/2026). In home, in quest'ordine: FG Albertelli, Il Mannarino, Etjca, Hummus Around,
   IDNTT Everywhere, FILA Group, Postbiotica (confermato da Giulia). Solo in Lavori: Momento, Al Passo, Zero, e in coda i progetti di laurea

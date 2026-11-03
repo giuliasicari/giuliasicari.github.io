@@ -280,7 +280,7 @@ main { animation: page-in 0.8s var(--ease-out) both; }
   padding: calc(var(--header-h) + 48px) var(--gutter) 0;
 }
 @media (min-width: 760px)  { .work-grid { grid-template-columns: repeat(2, 1fr); row-gap: 80px; } }
-@media (min-width: 1200px) { .work-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 900px)  { .work-grid { grid-template-columns: repeat(3, 1fr); } }
 
 .work__media {
   aspect-ratio: 4 / 5;

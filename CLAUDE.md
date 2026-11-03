@@ -56,7 +56,7 @@ Le pagine in `progetti/` usano percorsi relativi con `../` (es. `../css/style.cs
 ## Responsive
 - Mobile first. Gutter laterali con `--gutter` (16px, 20px da 760px), titoli con `clamp()`.
 - Breakpoint usati: 760px (menu desktop al posto dell'hamburger, Lavori a 2 colonne),
-  900px (griglie a 12 colonne), 1200px (Lavori a 3 colonne, colonna stretta di Servizi).
+  900px (griglie a 12 colonne, Lavori a 3 colonne), 1200px (colonna stretta di Servizi).
 - Verificare sempre che non ci sia scroll orizzontale a 375px.
 
 ## Menu

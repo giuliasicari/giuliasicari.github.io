@@ -482,7 +482,7 @@ main { animation: page-in 0.8s var(--ease-out) both; }
    Il colore di ogni campione si imposta con --c nella sezione del progetto. */
 .swatches { display: grid; gap: 6px; }
 .swatches__main { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
-.swatches__minor { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.swatches__minor { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 6px; }
 @media (min-width: 760px) { .swatches { grid-template-columns: 6fr 5fr; } }
 .swatch { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
 .swatch__chip { height: clamp(88px, 13vw, 200px); background: var(--c); }
@@ -504,6 +504,28 @@ main { animation: page-in 0.8s var(--ease-out) both; }
 .touch__bar { display: flex; gap: 4px; margin: 14px 0 12px; }
 .touch__bar i { height: 10px; flex: 0 0 calc((100% - 5 * 4px) / 6); background: var(--p-2); }
 .touch ul { font-size: 15px; line-height: 1.45; }
+
+/* Passaggi di una trasformazione (es. dalla foglia al simbolo), su celle bianche */
+.steps { display: grid; gap: 6px; }
+@media (min-width: 760px) { .steps { grid-template-columns: 1fr 2fr 1fr; } }
+.steps figure {
+  display: flex; flex-direction: column; justify-content: space-between; gap: 16px;
+  padding: clamp(16px, 3vw, 32px); background: #fff;
+}
+.steps img { width: 100%; height: clamp(140px, 18vw, 260px); object-fit: contain; }
+.steps figcaption { font-size: 13px; line-height: 1.35; }
+.steps figcaption b { display: block; font-weight: 500; }
+
+/* Elenco di luoghi con coordinate (es. le sedi di una rete) */
+.places {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 24px;
+  font-size: 14px; font-variant-numeric: tabular-nums;
+}
+@media (min-width: 760px)  { .places { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 1200px) { .places { grid-template-columns: repeat(5, 1fr); } }
+.places b { display: block; font-weight: 500; }
+.places span { opacity: 0.55; }
+.places .is-hub b { color: var(--p-2); }
 
 /* Fine pagina: tutti i lavori a sinistra, progetto successivo a destra (piccolo, con freccia) */
 .project-nav {
@@ -533,6 +555,19 @@ main { animation: page-in 0.8s var(--ease-out) both; }
 .swatch__chip--salvia  { --c: #67813b; }
 .swatch__chip--crema   { --c: #f5dea2; }
 .swatch__chip--bianco  { --c: #ffffff; }
+
+/* ---------- Progetto: IDNTT Everywhere ---------- */
+.project--idntt {
+  --p-1: #000000;   /* nero */
+  --p-2: #ff372c;   /* rosso */
+  --p-paper: #e7e3e0;
+  --p-ink: #1d2122;
+}
+.swatch__chip--nero      { --c: #000000; }
+.swatch__chip--rosso     { --c: #ff372c; }
+.swatch__chip--grigio    { --c: #a0a0a0; }
+.swatch__chip--antracite { --c: #1d2122; }
+.swatch__chip--pietra    { --c: #e7e3e0; }
 
 /* ==========================================================================
    Footer

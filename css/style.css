@@ -414,6 +414,7 @@ main { animation: page-in 0.8s var(--ease-out) both; }
 .flow > * + * { margin-top: 10px; }
 .flow > .section { margin-top: clamp(96px, 18vh, 200px); }
 .flow > .section + * { margin-top: clamp(40px, 7vh, 72px); }
+.flow > .facts { margin-top: clamp(72px, 12vh, 140px); }
 
 /* Testata di sezione (facoltativa): etichetta piccola a sinistra, frase grande a destra */
 .section {
@@ -526,6 +527,21 @@ main { animation: page-in 0.8s var(--ease-out) both; }
 .places b { display: block; font-weight: 500; }
 .places span { opacity: 0.55; }
 .places .is-hub b { color: var(--p-2); }
+
+/* Numeri chiave del progetto, nello stile del sito (bianco su nero) */
+.facts {
+  display: grid; gap: 32px 20px;
+  padding-inline: var(--gutter);
+}
+@media (min-width: 760px) { .facts { grid-template-columns: repeat(3, 1fr); } }
+.facts__num { font-size: var(--fs-statement); line-height: 0.92; letter-spacing: -0.035em; }
+.facts__label { margin-top: 12px; color: var(--muted); max-width: 26ch; }
+
+/* Icona della piattaforma accanto all'ambito (es. LinkedIn) */
+.platform-icon {
+  display: inline-block; width: 1.15em; height: 1.15em;
+  margin-left: 8px; vertical-align: -0.2em;
+}
 
 /* Fine pagina: tutti i lavori a sinistra, progetto successivo a destra (piccolo, con freccia) */
 .project-nav {

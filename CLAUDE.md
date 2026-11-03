@@ -80,6 +80,10 @@ Stile Behance: guidata dalle immagini, pochissimo testo. Ordine:
    del marchio `.sheet-stage` (es. manifesto impaginato come immagine nello stile del cliente).
 5. Facoltativi: testate di sezione `.section` (solo se aggiungono qualcosa alle immagini) e tavola di sintesi
    `.system` (colore, texture; "Dove vive il marchio" `.touch` solo per identità con molti supporti).
+   Altri blocchi: `.steps` (passaggi di una trasformazione), `.places` (luoghi con coordinate), `.facts` (tre numeri
+   chiave, bianco su nero), `.platform-icon` (icona della piattaforma accanto all'ambito, es. LinkedIn).
+   Varia la tavola di sintesi da un progetto all'altro per non essere ripetitiva: se il documento ha già
+   una sua tavola della palette (es. FILA), usa quella così com'è invece dei campioni `.swatches`.
 6. **Niente crediti** e niente nome dell'agenzia.
 7. Fine pagina `.project-nav`: "← Torna ai lavori" a sinistra, "Progetto successivo →" piccolo a destra.
 - In alto "← Torna alla home" con `href="../index.html#<slug>"`: la home si riapre sul pannello del progetto

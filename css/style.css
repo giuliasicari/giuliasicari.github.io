@@ -415,12 +415,12 @@ main { animation: page-in 0.8s var(--ease-out) both; }
    Il blocco è alto quanto lo schermo: la prima tavola entra dopo una pausa ampia. */
 .project-intro {
   display: grid;
-  min-height: 100svh; align-content: start;
-  padding: clamp(48px, 9vh, 96px) var(--gutter);
+  align-content: start;
+  padding: clamp(48px, 9vh, 96px) var(--gutter) 56svh;
 }
 .project-intro__text { font-size: var(--fs-big); line-height: 1.15; letter-spacing: -0.015em; max-width: 30ch; }
 @media (min-width: 900px) {
-  .project-intro { grid-template-columns: repeat(12, 1fr); gap: 20px; }
+  .project-intro { grid-template-columns: repeat(12, 1fr); gap: 20px; padding-bottom: 49svh; }
   .project-intro__text { grid-column: 4 / 11; }
 }
 

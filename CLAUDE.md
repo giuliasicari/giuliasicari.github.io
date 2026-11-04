@@ -47,7 +47,8 @@ Le pagine in `progetti/` usano percorsi relativi con `../` (es. `../css/style.cs
 - **Header:** trasparente in cima, box nero appena si scorre. In home c'è il nome a sinistra;
   nelle pagine interne "← Torna alla home" (classe `.back`). Menu sempre in alto a destra.
 - **Layout Servizi/Contatti** (classe `.info`): griglia a 12 colonne; da 1200px etichetta in colonna 3–4
-  e testo in colonna 5–8; tutto allo stesso peso e alla stessa misura del testo.
+  e testo in colonna 5–8. Gerarchia: titolo di sezione (`h2`) leggermente più grande e in grigio; voci (`h3`) alla misura
+  del testo, in bianco e peso 500; descrizione delle voci in grigio (richiesta di Giulia, 4/11/2026).
 - **Footer:** frase di contatto grande, link in grigio che diventano bianchi al passaggio.
 - **Animazioni:** comparsa allo scroll (`.reveal`, sale di 40px), dissolvenza della pagina all'apertura,
   hamburger con linee da 1px che si trasforma in una X larga e bassa, voci del menu mobile che salgono
@@ -127,7 +128,9 @@ Stile Behance: guidata dalle immagini, pochissimo testo. Ordine:
 - Email: giuliasicari93@gmail.com (footer, menu mobile e `contatti.html`).
 - Servizi: i collaboratori non vengono nominati e i servizi non si distinguono tra "miei" e "del team";
   le reference del team si mandano su richiesta. Pacchetti e prezzi: rimandati a un aggiornamento futuro.
-- Strumenti in `about.html` e descrizioni dei progetti sono da verificare.
+- Prodotti personalizzati in `servizi.html`: aggiungere il link al catalogo digitale di Due Stampe appena è online.
+- Contatti: scrivere solo che Giulia lavora da remoto, senza indicare dove si trova.
+- Descrizioni dei progetti da verificare.
 
 ## Skill
 - Installazione e controllo di sicurezza delle skill: vedi le istruzioni generali di Claude.

@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ['campagne', 'marchi che vogliono farsi ricordare.'],
       ['contenuti social', 'brand che parlano ogni giorno.'],
       ['siti', 'idee che meritano una casa.'],
-      ['motion', 'storie che si muovono.'],
+      ['video', 'storie che si muovono.'],
     ];
     const PAUSE = 4000;     // quanto resta ferma ogni frase
     const STAGGER = 280;    // ritardo tra la prima e la seconda parte

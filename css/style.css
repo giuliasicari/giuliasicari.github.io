@@ -219,10 +219,15 @@ main { animation: page-in 0.8s var(--ease-out) both; }
 }
 .intro__title {
   font-size: var(--fs-statement);
-  line-height: 0.92;
+  line-height: 0.98;
   letter-spacing: -0.035em;
-  max-width: 14ch;
 }
+/* Frasi che cambiano: parole fisse in grigio, parole che cambiano in bianco */
+.phrases { position: relative; display: block; }
+.phrases__line { display: block; }
+.phrases__fixed { color: var(--muted); }
+.phrases__word { display: inline-block; white-space: pre; will-change: filter, opacity; }
+.phrases__word--old { position: absolute; pointer-events: none; }
 .intro__sub {
   display: flex; justify-content: space-between; gap: 24px;
   margin-top: clamp(32px, 6vh, 64px);

@@ -5,7 +5,7 @@ dal repository `giuliasicari.github.io` (branch principale, cartella root).
 
 > **Versione v02** (nero, tipografia grande, nessun colore). Direzione approvata da Giulia il 3/11/2026.
 > Le immagini dei progetti sono ancora segnaposto: Giulia le sostituirà in un secondo momento.
-> Da valutare: le frasi grandi in home e in About sono provvisorie.
+> Da valutare: la frase grande in About è provvisoria.
 > Questo repository è **pubblico**: niente strategia commerciale, prezzi o dati di fornitori.
 
 ## Tecnologia
@@ -20,7 +20,7 @@ dal repository `giuliasicari.github.io` (branch principale, cartella root).
 
 ## Struttura
 ```
-index.html            Home: frase grande + un progetto per schermata (pannelli a tutto schermo)
+index.html            Home: frasi che cambiano + un progetto per schermata (pannelli a tutto schermo)
 lavori.html           Griglia di tavole verticali 4:5 con didascalia
 about.html            Frase grande + blocchi (titolo piccolo a sinistra, testo grande a destra)
 servizi.html          Frase grande + "I miei servizi" e "Come lavoro" in colonna stretta
@@ -50,6 +50,9 @@ Le pagine in `progetti/` usano percorsi relativi con `../` (es. `../css/style.cs
   e testo in colonna 5–8. Gerarchia: titolo di sezione (`h2`) leggermente più grande e in grigio; voci (`h3`) alla misura
   del testo, in bianco e peso 500; descrizione delle voci in grigio (richiesta di Giulia, 4/11/2026).
 - **Footer:** frase di contatto grande, link in grigio che diventano bianchi al passaggio.
+- **Frasi della home:** "Disegno … per …", parole fisse in grigio e parole che cambiano in bianco, stesso carattere e peso.
+  Testi e tempi in `js/main.js`: dissolvenza incrociata con sfocatura di 2,8 secondi, frase ferma per 4 secondi (scelta di Giulia).
+  Con `prefers-reduced-motion` resta ferma la prima frase.
 - **Animazioni:** comparsa allo scroll (`.reveal`, sale di 40px), dissolvenza della pagina all'apertura,
   hamburger con linee da 1px che si trasforma in una X larga e bassa, voci del menu mobile che salgono
   una dopo l'altra. Rispettare sempre `prefers-reduced-motion`.

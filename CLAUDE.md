@@ -128,7 +128,7 @@ Stile Behance: guidata dalle immagini, pochissimo testo. Ordine:
 - Email: giuliasicari93@gmail.com (footer, menu mobile e `contatti.html`).
 - Servizi: i collaboratori non vengono nominati e i servizi non si distinguono tra "miei" e "del team";
   le reference del team si mandano su richiesta. Pacchetti e prezzi: rimandati a un aggiornamento futuro.
-- Prodotti personalizzati in `servizi.html`: aggiungere il link al catalogo digitale di Due Stampe appena è online.
+- Prodotti personalizzati in `servizi.html`: aggiungere il link al catalogo digitale di 2stampe appena è online.
 - Contatti: scrivere solo che Giulia lavora da remoto, senza indicare dove si trova.
 - Descrizioni dei progetti da verificare.
 

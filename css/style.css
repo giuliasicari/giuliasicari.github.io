@@ -670,6 +670,12 @@ main { animation: page-in 0.8s var(--ease-out) both; }
 .swatch__chip--crema   { --c: #f5dea2; }
 .swatch__chip--bianco  { --c: #ffffff; }
 
+/* ---------- Progetto: Filante ---------- */
+@media (min-width: 760px) {
+  .row--fil-quadri { grid-template-columns: 7211fr 6819fr; }   /* manifesto 1324×1836, amare 1370×2009 */
+  .row--fil-serie { grid-template-columns: 8051fr 12800fr; }   /* valore 822×1021, serie 855×668 */
+}
+
 /* ---------- Progetti di laurea (Politecnico di Milano) ---------- */
 .row--4 { grid-template-columns: repeat(2, 1fr); }
 @media (min-width: 760px) {

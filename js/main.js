@@ -33,6 +33,18 @@ document.addEventListener('DOMContentLoaded', () => {
     menu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
   }
 
+  // Anteprime video: partono solo quando sono in vista, ferme se si preferisce meno movimento
+  const clips = document.querySelectorAll('video[data-autoplay]');
+  if (clips.length && 'IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const clipObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.play().catch(() => {});
+        else entry.target.pause();
+      });
+    }, { threshold: 0.2 });
+    clips.forEach((clip) => clipObserver.observe(clip));
+  }
+
   // Comparsa allo scroll
   const items = document.querySelectorAll('.reveal');
   if (!('IntersectionObserver' in window)) {

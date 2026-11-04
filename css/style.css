@@ -797,6 +797,64 @@ main { animation: page-in 0.8s var(--ease-out) both; }
   color: var(--muted);
 }
 
+/* ---------- Progetto: Fittiamo ---------- */
+.project--fittiamo { --p-1: #22302d; --p-2: #bbff7d; --p-paper: #f5f5dc; --p-ink: #22302d; }
+.project--fittiamo video { display: block; width: 100%; height: auto; }
+.ig-icon { display: inline-block; width: 1.15em; height: 1.15em; flex: none; }
+.platform-link { display: inline-block; margin-left: 8px; vertical-align: -0.2em; color: var(--muted); }
+.platform-link:hover { color: var(--ink); }
+.row--6 { grid-template-columns: repeat(3, 1fr); }
+@media (min-width: 900px) { .row--6 { grid-template-columns: repeat(6, 1fr); } }
+@media (min-width: 760px) {
+  .row--fit-carta { grid-template-columns: 705fr 750fr; }           /* locandina 1100×1560, calendario 900×1200 */
+}
+.sheet-stage--fit { background: var(--p-paper); }
+.sheet-stage--fit img { width: 100%; box-shadow: none; }
+
+/* Texture: il simbolo ripetuto a file sfalsate */
+.fit-texture { aspect-ratio: 4 / 3; background-size: 84px auto; background-position: 0 0, 42px 45px; }
+.fit-texture--menta { background-color: #37c891; background-image: url("../images/fittiamo/icotipo-scuro.svg"), url("../images/fittiamo/icotipo-scuro.svg"); }
+.fit-texture--scuro { background-color: #22302d; background-image: url("../images/fittiamo/icotipo-menta.svg"), url("../images/fittiamo/icotipo-menta.svg"); }
+.fit-texture--ambra { background-color: #f6b646; background-image: url("../images/fittiamo/icotipo-scuro.svg"), url("../images/fittiamo/icotipo-scuro.svg"); }
+.fit-texture--crema { background-color: #f5f5dc; background-image: url("../images/fittiamo/icotipo-scuro.svg"), url("../images/fittiamo/icotipo-scuro.svg"); }
+
+/* Reel: anteprime verticali che rimandano a Instagram */
+.reels {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(10px, 2vw, 28px);
+  margin-inline: var(--gutter); padding: clamp(20px, 5vw, 80px);
+  background: #37c891; color: #22302d;
+}
+@media (min-width: 900px) { .reels { grid-template-columns: repeat(4, 1fr); } }
+.reel { display: grid; gap: 10px; }
+.reel__media { position: relative; display: block; aspect-ratio: 9 / 16; overflow: hidden; background: #22302d; box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.45); }
+.reel__media video, .reel__media img { width: 100%; height: 100%; object-fit: cover; }
+.reel__badge { position: absolute; top: 10px; right: 10px; color: #fff; font-size: 22px; line-height: 0; }
+.reel__cap { font-size: 15px; line-height: 1.2; }
+.reel:hover .reel__cap { text-decoration: underline; }
+
+/* Carosello: le immagini restano intere, una accanto all'altra */
+.fit-carousel { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; padding-inline: var(--gutter); }
+.fit-carousel a:first-child { grid-column: 1 / -1; }
+@media (min-width: 760px) {
+  .fit-carousel { grid-template-columns: repeat(5, 1fr); }
+  .fit-carousel a:first-child { grid-column: auto; }
+}
+
+/* Inviti finali: Instagram e sito */
+.fit-cta { display: grid; gap: 10px; padding-inline: var(--gutter); }
+@media (min-width: 900px) { .fit-cta { grid-template-columns: 1fr 1fr; } }
+.fit-cta__link {
+  display: flex; align-items: center; gap: 16px;
+  padding: clamp(28px, 5vw, 64px) clamp(20px, 3vw, 40px);
+  font-size: clamp(1.25rem, 2.2vw, 2rem); line-height: 1.1; letter-spacing: -0.015em;
+  color: #22302d;
+}
+.fit-cta__link--ig { background: #bbff7d; }
+.fit-cta__link--web { background: #f5f5dc; }
+.fit-cta__arrow { margin-left: auto; transition: transform 0.3s var(--ease-out); }
+.fit-cta__link:hover .fit-cta__arrow { transform: translateX(8px); }
+.flow > .fit-cta { margin-top: clamp(72px, 12vh, 140px); }
+
 /* ==========================================================================
    Comparsa allo scroll (solo con JavaScript attivo)
    ========================================================================== */

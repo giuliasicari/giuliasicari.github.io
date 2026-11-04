@@ -10,7 +10,6 @@
   --line: #262626;
 
   --font: "Inter Tight", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-logo: "Archivo", "Helvetica Neue", Arial, sans-serif;
 
   --gutter: 16px;
   --header-h: 72px;
@@ -94,14 +93,11 @@ main { animation: page-in 0.8s var(--ease-out) both; }
 
 /* Il nome: grottesco largo e pesante, come un logotipo */
 .brand {
-  font-family: var(--font-logo);
-  font-weight: 800;
-  font-stretch: 125%;
-  font-variation-settings: "wdth" 125;
-  text-transform: uppercase;
-  font-size: 15px;
-  line-height: 0.92;
-  letter-spacing: -0.01em;
+  font-family: "Libre Caslon Text", Georgia, serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.015em;
 }
 
 /* Menu desktop */
@@ -113,7 +109,7 @@ main { animation: page-in 0.8s var(--ease-out) both; }
 
 @media (min-width: 760px) {
   .nav { display: block; }
-  .brand { font-size: 17px; }
+  .brand { font-size: 22px; }
 }
 
 /* ---------- Hamburger: linee da 1px, la X è larga e bassa ---------- */

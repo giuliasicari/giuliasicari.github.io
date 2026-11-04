@@ -38,7 +38,7 @@ Le pagine in `progetti/` usano percorsi relativi con `../` (es. `../css/style.cs
   (fondo dei segnaposto immagine).
 - **Tipografia:**
   - Testi e titoli: **Inter Tight** 400 (Google Fonts). Anche i titoli grandi sono a peso normale.
-  - Nome in home: **Archivo** 800 in larghezza 125 (grottesco largo, effetto logotipo), maiuscolo.
+  - Nome in home: **Libre Caslon Text** 400 (Google Fonts), staccato e non maiuscolo: 22px, 20px su telefono (scelta di Giulia, 4/11/2026).
   - Tre misure: `--fs-body` (15px mobile, 18px desktop), `--fs-big` (frasi, About, footer),
     `--fs-statement` (frase-titolo di ogni pagina, classe `.statement`).
 - Nessuna linea, ombra, bordo arrotondato o gradiente. Le gerarchie si fanno con dimensione e grigio.

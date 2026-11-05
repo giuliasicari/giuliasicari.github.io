@@ -863,6 +863,25 @@ main { animation: page-in 0.8s var(--ease-out) both; }
 .fit-cta__link:hover .fit-cta__arrow { transform: translateX(8px); }
 .flow > .fit-cta { margin-top: clamp(72px, 12vh, 140px); }
 
+/* ---------- Progetto: 2stampe ---------- */
+.project--2stampe { --p-1: #0e414a; --p-2: #efe8df; --p-paper: #efe8df; --p-ink: #0e414a; }
+.ds-tile { display: flex; align-items: center; justify-content: center; aspect-ratio: 3 / 2; padding: 12%; }
+@media (min-width: 760px) { .ds-tile { aspect-ratio: 1 / 1; padding: 14%; } }
+.ds-tile img { width: 100%; height: auto; }
+.ds-tile--big { aspect-ratio: 16 / 9; padding: 12% 22%; }
+.ds-tile.ds-tile--sym { aspect-ratio: 1 / 1; padding: 22%; }
+.row--2s-simboli { grid-template-columns: repeat(3, 1fr); }
+.ds-tile--beige { background: #efe8df; }
+.ds-tile--blu { background: #0e414a; }
+.ds-tile--rosso { background: #7f1810; }
+.ds-tile--verde { background: #0d4b2e; }
+.ds-tile--sabbia { background: #d7b998; }
+.stage--2s figure { background: transparent; box-shadow: none; }
+@media (min-width: 760px) {
+  .row--2s-coppia { grid-template-columns: 1000fr 800fr; }     /* 1254×1254 e 1122×1402 */
+  .row--2s-capi { grid-template-columns: 1000fr 1000fr 750fr; } /* 1254×1254, 1254×1254 e 1086×1448 */
+}
+
 /* ==========================================================================
    Comparsa allo scroll (solo con JavaScript attivo)
    ========================================================================== */

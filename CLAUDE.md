@@ -117,7 +117,7 @@ Stile Behance: guidata dalle immagini, pochissimo testo. Ordine:
   devono vedersi interi anche nella tavola.
 - Sorgenti e prototipi restano fuori dal repo, in `C:\Claude_Folder\portfolio-prototipi\` (repo pubblico).
 - Progetti (3/11/2026). In home, in quest'ordine: FG Albertelli, Il Mannarino, Etjca, Hummus Around,
-  IDNTT Everywhere, FILA Group, Postbiotica (confermato da Giulia). Solo in Lavori: Momento, Al Passo, Zero, Filante, Fittiamo, e in coda i progetti di laurea
+  IDNTT Everywhere, FILA Group, Postbiotica (confermato da Giulia). Solo in Lavori: Momento, Al Passo, Zero, Filante, Fittiamo, 2stampe, e in coda i progetti di laurea
   (Politecnico): Chilling at Home, TAAC, Handprint. Da dichiarare come tali: "tesi di laurea per IMETEC", "concept per IKEA".
 - Video nelle pagine progetto (primo esempio: Fittiamo): MP4 senza audio, 5-9 secondi, 540 px di larghezza per i verticali, circa 1 MB,
   con locandina `.jpg` omonima e attributo `data-autoplay`: `js/main.js` li avvia solo quando sono in vista e li lascia fermi con `prefers-reduced-motion`.

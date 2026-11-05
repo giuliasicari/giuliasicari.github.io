@@ -412,15 +412,15 @@ main { animation: page-in 0.8s var(--ease-out) both; }
 .hero-meta dt { color: var(--muted); }
 
 /* Una sola frase, niente titolo grande (il nome è già nella copertina).
-   Il blocco è alto quanto lo schermo: la prima tavola entra dopo una pausa ampia. */
+   La prima tavola entra dopo una pausa: ampia, ma senza costringere a scorrere troppo. */
 .project-intro {
   display: grid;
   align-content: start;
-  padding: clamp(48px, 9vh, 96px) var(--gutter) 56svh;
+  padding: clamp(48px, 9vh, 96px) var(--gutter) 36svh;
 }
 .project-intro__text { font-size: var(--fs-big); line-height: 1.15; letter-spacing: -0.015em; max-width: 30ch; }
 @media (min-width: 900px) {
-  .project-intro { grid-template-columns: repeat(12, 1fr); gap: 20px; padding-bottom: 49svh; }
+  .project-intro { grid-template-columns: repeat(12, 1fr); gap: 20px; padding-bottom: 32svh; }
   .project-intro__text { grid-column: 4 / 11; }
 }
 
@@ -870,7 +870,7 @@ main { animation: page-in 0.8s var(--ease-out) both; }
 .ds-tile img { width: 100%; height: auto; }
 .ds-tile--big { aspect-ratio: 16 / 9; padding: 12% 22%; }
 .ds-tile.ds-tile--sym { aspect-ratio: 1 / 1; padding: 22%; }
-.row--2s-simboli { grid-template-columns: repeat(3, 1fr); }
+.row--2s-simboli { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .ds-tile--beige { background: #efe8df; }
 .ds-tile--blu { background: #0e414a; }
 .ds-tile--rosso { background: #7f1810; }

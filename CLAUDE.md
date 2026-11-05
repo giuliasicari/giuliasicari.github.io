@@ -79,7 +79,7 @@ Stile Behance: guidata dalle immagini, pochissimo testo. Ordine:
    verticale, ricostruirlo; ripiego: logo su fondo pieno nel colore del marchio.
 2. **Solo Cliente e Ambito** in piccolo (`.hero-meta`). Niente Ruolo, niente Anno.
 3. **Una sola frase** (`.project-intro`), niente titolo grande: il nome è già nella copertina
-   (l'`<h1>` resta con `.visually-hidden`). Sotto la frase c'è una pausa prima delle tavole, 56svh su telefono e 49svh da 900px: tre quarti di quella iniziale (richiesta di Giulia).
+   (l'`<h1>` resta con `.visually-hidden`). Sotto la frase c'è una pausa prima delle tavole, 36svh su telefono e 32svh da 900px (richiesta di Giulia: non appiccicata, ma senza scorrere troppo).
 4. **Tavole** dentro `.flow`: righe `.row` / `.row--2` / `.row--3`; fondo colorato `.stage`; foglio su fondo
    del marchio `.sheet-stage` (es. manifesto impaginato come immagine nello stile del cliente).
 5. Facoltativi: testate di sezione `.section` (solo se aggiungono qualcosa alle immagini) e tavola di sintesi
